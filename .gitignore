@@ -19,3 +19,6 @@ build
 # Ignore Eclipse Project
 /.settings/
 /.project
+
+# Ignore Document Lock
+.~lock*
