@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/resume/src" modelPluginID="resume" modelName="Resume"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/resume/src" modelPluginID="resume" modelName="Resume"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>Resume.ecore</foreignModel>
   <genPackages prefix="Resume" disposableProviderFactory="true" ecorePackage="Resume.ecore#/">
-    <genClasses ecoreClass="Resume.ecore#//ResumeModel"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Resume.ecore#//EmploymentType">
+      <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//EmploymentType/1099"/>
+      <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//EmploymentType/C2C"/>
+      <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//EmploymentType/W2"/>
+      <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//EmploymentType/OSS"/>
+    </genEnums>
+    <genClasses ecoreClass="Resume.ecore#//ResumeModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/skills"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/accomplishments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/employers"/>
+    </genClasses>
+    <genClasses ecoreClass="Resume.ecore#//Contact">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Contact/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Contact/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Contact/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Contact/phone"/>
+    </genClasses>
+    <genClasses ecoreClass="Resume.ecore#//Skill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Skill/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Skill/children"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Resume.ecore#//Skill/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="Resume.ecore#//Employment">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Employment/contact"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Resume.ecore#//Employment/skills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/employer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/endDate"/>
+    </genClasses>
+    <genClasses ecoreClass="Resume.ecore#//Accomplishment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Accomplishment/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Accomplishment/description"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
