@@ -9,4 +9,4 @@
 
 rootProject.name = 'resume'
 
-includeBuild 'plugin'
+includeBuild 'gradle/plugin'
