@@ -4,3 +4,19 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds
  */
+
+plugins {
+	id 'base'
+	id 'eclipse'
+	id 'idea'
+	id 'project-report'
+	id 'drkstr101.resume'
+}
+
+task checkPlugin {
+	dependsOn gradle.includedBuild('plugin').task(':check')
+}
+
+check {
+	dependsOn checkPlugin
+}
