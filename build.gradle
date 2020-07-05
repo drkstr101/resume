@@ -6,7 +6,6 @@
  */
 
 plugins {
-	id 'base'
 	id 'eclipse'
 	id 'idea'
 	id 'project-report'
@@ -16,12 +15,4 @@ plugins {
 resume {
 	skillDataFile = file('public/data/skills.json')
 	employerDataFile = file('public/data/employers.json')
-}
-
-task checkPlugin {
-	dependsOn gradle.includedBuild('plugin').task(':check')
-}
-
-check {
-	dependsOn checkPlugin, validateResume
 }

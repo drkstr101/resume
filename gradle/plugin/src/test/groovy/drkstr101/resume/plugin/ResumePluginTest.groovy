@@ -19,7 +19,7 @@ public class ResumePluginTest extends Specification {
         project.plugins.apply("drkstr101.resume")
 
         then:
-        project.tasks.findByName("validateResume") != null
+        project.tasks.findByName("validateResumeModel") != null
         project.extensions.findByName("resume") != null
     }
 }
