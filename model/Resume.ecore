@@ -8,9 +8,8 @@
         eType="#//Accomplishment" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employers" upperBound="-1"
         eType="#//Employment" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Contact">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fullName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -23,25 +22,25 @@
         eOpposite="#//Skill/children"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Employment">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contact" lowerBound="1"
-        eType="#//Contact" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
-        eType="#//Skill"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="employer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//EmploymentType"
-        defaultValueLiteral="CONTRACTOR"/>
+        defaultValueLiteral="DIRECT_W2"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
+        eType="#//Skill"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Accomplishment">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
+        eType="#//Skill"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="EmploymentType">
-    <eLiterals name="CONTRACTOR" literal="CONTRACTOR"/>
-    <eLiterals name="C2C" value="1"/>
-    <eLiterals name="W2" value="2"/>
-    <eLiterals name="OSS" value="3"/>
+    <eLiterals name="DIRECT_W2" literal="DIRECT_W2"/>
+    <eLiterals name="DIRECT_1099" value="1" literal="DIRECT_1099"/>
+    <eLiterals name="CORP_TO_CORP" value="2" literal="CORP_TO_CORP"/>
+    <eLiterals name="SELF" value="3" literal="SELF"/>
   </eClassifiers>
 </ecore:EPackage>
