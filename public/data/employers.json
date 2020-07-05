@@ -1,0 +1,74 @@
+[
+	{
+		"name": "Washington Web Apps",
+		"type": "SELF",
+		"startDate": "2019-06-01",
+		"endDate": null
+	},
+	{
+		"name": "Expedia Group / WAVSYS",
+		"type": "DIRECT_1099",
+		"startDate": "2018-11-01",
+		"endDate": "2019-06-01"
+	},
+	{
+		"name": "Catalyte-Surge IT Services",
+		"type": "DIRECT_1099",
+		"startDate": "2017-10-01",
+		"endDate": "2018-06-01"
+	},
+	{
+		"name": "NuLabel Technologies",
+		"type": "DIRECT_1099",
+		"startDate": "2017-05-01",
+		"endDate": "2018-07-01"
+	},
+	{
+		"name": "Vivid Learning Systems",
+		"type": "DIRECT_W2",
+		"startDate": "2010-10-01",
+		"endDate": "2017-04-01T"
+	},
+	{
+		"name": "Demand Lending",
+		"type": "CORP_TO_CORP",
+		"startDate": "TODO",
+		"endDate": "TODO"
+	},
+	{
+		"name": "All Student Rentals",
+		"type": "CORP_TO_CORP",
+		"startDate": "TODO",
+		"endDate": "TODO"
+	},
+	{
+		"name": "Team08 Snowboards",
+		"type": "CORP_TO_CORP",
+		"startDate": "TODO",
+		"endDate": "TODO"
+	},
+	{
+		"name": "Splash Labs",
+		"type": "SELF",
+		"startDate": "2007-08-01",
+		"endDate": "2010-09-01"
+	},
+	{
+		"name": "North Coast Credit Union",
+		"type": "DIRECT_W2",
+		"startDate": "2006-02-01",
+		"endDate": "2007-06-01"
+	},
+	{
+		"name": "HSBC",
+		"type": "DIRECT_W2",
+		"startDate": "2004-04-01",
+		"endDate": "2005-10-01"
+	},
+	{
+		"name": "Capital One",
+		"type": "DIRECT_W2",
+		"startDate": "2004-04-01",
+		"endDate": "2003-01-01"
+	}
+]
