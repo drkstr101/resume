@@ -11,10 +11,14 @@ import org.gradle.api.Plugin
  */
 public class ResumePlugin implements Plugin<Project> {
     public void apply(Project project) {
-        // Register a task
-        project.tasks.register("greeting") {
+        final ResumeExtension resume = project.extensions.create('resume', ResumeExtension)
+		assert resume
+		
+		// Add a task to validate all input data
+        project.tasks.register("validateResume") {
             doLast {
-                println("Hello from plugin 'drkstr101.resume.plugin.greeting'")
+                assert resume.skillDataFile.exists()
+                assert resume.employerDataFile.exists()
             }
         }
     }

@@ -13,10 +13,15 @@ plugins {
 	id 'drkstr101.resume'
 }
 
+resume {
+	skillDataFile = file('public/data/skills.json')
+	employerDataFile = file('public/data/employers.json')
+}
+
 task checkPlugin {
 	dependsOn gradle.includedBuild('plugin').task(':check')
 }
 
 check {
-	dependsOn checkPlugin
+	dependsOn checkPlugin, validateResume
 }
