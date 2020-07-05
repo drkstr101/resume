@@ -19,6 +19,7 @@
       <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/address"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/email"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/phone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/references"/>
     </genClasses>
     <genClasses ecoreClass="Resume.ecore#//Skill">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Skill/name"/>
@@ -26,6 +27,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Resume.ecore#//Skill/parent"/>
     </genClasses>
     <genClasses ecoreClass="Resume.ecore#//Employment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/employer"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/type"/>
       <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute Resume.ecore#//Employment/description"/>
@@ -37,6 +39,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Accomplishment/name"/>
       <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute Resume.ecore#//Accomplishment/description"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Resume.ecore#//Accomplishment/skills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Resume.ecore#//Accomplishment/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="Resume.ecore#//Reference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Reference/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Reference/uri"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Resume.ecore#//Reference/employment"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
