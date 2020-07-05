@@ -12,6 +12,9 @@ plugins {
 	id 'drkstr101.resume'
 }
 
+group = 'drkstr101'
+version = '2.0.0'
+
 resume {
 	skillDataFile = file('public/data/skills.json')
 	employerDataFile = file('public/data/employers.json')
