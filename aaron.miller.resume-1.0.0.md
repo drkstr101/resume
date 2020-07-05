@@ -2,7 +2,7 @@
 
 A highly professional software developer with over 12 years of experience
 
-![Skill Clould Diagram](img/skillcoud-1.0.0.png)
+![Skill Cloud Diagram](img/skillcoud-1.0.0.png)
 
 **Objective**
 
