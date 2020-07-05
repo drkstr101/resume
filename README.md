@@ -1,5 +1,5 @@
-# Personal Resume Publisher for Aaron R Miller
+# Resume - Aaron R Miller
 
-## Resume Model
+This project contains all sources and public resources used in the publication of my personal resume.
 
 ![Resume Model Diagram](public/img/resume.model-0.1a.jpg)
