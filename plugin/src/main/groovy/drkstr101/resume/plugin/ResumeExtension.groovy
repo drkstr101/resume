@@ -3,65 +3,49 @@
  */
 package drkstr101.resume.plugin
 
+import org.gradle.api.DomainObjectSet
+import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Nested
+import org.gradle.api.tasks.Optional
+
+import drkstr101.resume.plugin.model.Accomplishment
+import drkstr101.resume.plugin.model.Employment
+import drkstr101.resume.plugin.model.Reference
+import drkstr101.resume.plugin.model.Skill
+
 /**
  * @author Aaron R Miller
  *
  */
-class ResumeExtension {
+interface ResumeExtension {
 
-	String fullName
+	@Input
+	String getFullName()
+	void setFullName(String fullName)
 
-	String email
+	@Optional
+	@Input
+	String getAddress()
+	void setAddress(String address)
 
-	String address
+	@Input
+	String getEmail()
+	void setEmail(String email)
 
-	String phone
+	@Optional
+	@Input
+	String getPhone()
+	void setPhone(String phone)
 
-	/**
-	 * Append new Accomplishment to the Resume model.
-	 * 
-	 * @param name
-	 * @param config
-	 */
-	void accomplishment(String name, @DelegatesTo(AccomplishmentDelegate) Closure config) {
-		use(AccomplishmentDelegate) {
-			// TODO ...
-		}
-	}
+	@Nested
+	DomainObjectSet<Accomplishment> getAccomplishments()
 
-	/**
-	 * Append new Employment to the resume model.
-	 * 
-	 * @param name
-	 * @param config
-	 */
-	void employment(String name, @DelegatesTo(EmploymentDelegate) Closure config) {
-		use(EmploymentDelegate) {
-			// TODO ...
-		}
-	}
+	@Nested
+	DomainObjectSet<Employment> getEmployers()
 
-	/**
-	 * Append new Reference to the resume model.
-	 * 
-	 * @param name
-	 * @param config
-	 */
-	void reference(String name, @DelegatesTo(ReferenceDelegate) Closure config) {
-		use(ReferenceDelegate) {
-			// TODO ...
-		}
-	}
+	@Nested
+	DomainObjectSet<Reference> getReferences()
 
-	/**
-	 * Append new Skill to the resume model.
-	 * 
-	 * @param name
-	 * @param config
-	 */
-	void skill(String name, @DelegatesTo(SkillDelegate) Closure config) {
-		use(SkillDelegate) {
-			// TODO ...
-		}
-	}
+	@Nested
+	DomainObjectSet<Skill> getSkills()
 }
