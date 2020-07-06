@@ -30,7 +30,6 @@ class Skill {
 		throw new UnsupportedOperationException();
 	}
 
-
 	Skill(String name) {
 		this.name = name
 	}

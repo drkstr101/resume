@@ -128,4 +128,18 @@ resume {
 			}
 		}
 	}
+
+	employers {
+		waweb
+		expedia
+		surge
+		nulabel
+		vivid
+		all_student_rentals
+		team08
+		splash_labs
+		nccu
+		hsbc
+		capital_one
+	}
 }

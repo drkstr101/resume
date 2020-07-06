@@ -1,41 +1,30 @@
 package drkstr101.resume.plugin.model
 
-import org.gradle.api.DomainObjectSet
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.Nested
-import org.gradle.model.Managed
-
 /**
  * @author Aaron R Miller
  *
  */
-@Managed
-interface Employment {
+class Employment {
 
-	@Input
-	String getTitle()
-	void setTitle(String title)
+	private final String name
 
-	@Input
-	String getEmployer()
-	void setEmployer(String employer)
+	String getName() {
+		return name;
+	}
 
-	@Input
-	EmploymentType getType()
-	void setType(EmploymentType type)
+	String title
 
-	@Input
-	String getDescription()
-	void setDescription(String description)
+	String employer
 
-	@Input
-	Calendar getStartDate()
-	void setStartDate(Calendar startDate)
+	EmploymentType type
 
-	@Input
-	Calendar getEndDate()
-	void setEndDate(Calendar endDate)
+	String description
 
-	@Nested
-	DomainObjectSet<Skill> getSkills()
+	Calendar startDate
+
+	Calendar endDate
+
+	Employment(String name) {
+		this.name = name
+	}
 }
