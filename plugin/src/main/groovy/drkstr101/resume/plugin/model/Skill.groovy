@@ -1,19 +1,37 @@
 package drkstr101.resume.plugin.model
 
-import org.gradle.api.DomainObjectSet
+import javax.inject.Inject
+
+import org.gradle.api.NamedDomainObjectContainer
+import org.gradle.api.model.ObjectFactory
+import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.Nested
-import org.gradle.model.Managed
 
 /**
  * @author Aaron R Miller
  *
  */
-@Managed
-interface Skill {
+class Skill {
 
-	String getName()
-	void setName(String name)
+	private final String name
+
+	String getName() {
+		return name;
+	}
+
+	String label
 
 	@Nested
-	DomainObjectSet<Skill> getChildren()
+	final NamedDomainObjectContainer<Skill> skills = objectFactory.domainObjectContainer(Skill)
+
+	@Inject
+	protected ObjectFactory getObjectFactory() {
+		// Method body is ignored
+		throw new UnsupportedOperationException();
+	}
+
+
+	Skill(String name) {
+		this.name = name
+	}
 }
