@@ -17,16 +17,16 @@
       <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//AccomplishmentType/Personal"/>
       <genEnumLiterals ecoreEnumLiteral="Resume.ecore#//AccomplishmentType/Volunteer"/>
     </genEnums>
-    <genClasses ecoreClass="Resume.ecore#//ResumeModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/skills"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/accomplishments"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/employers"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/fullName"/>
-      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/address"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/email"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/phone"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//ResumeModel/references"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//ResumeModel/homepage"/>
+    <genClasses ecoreClass="Resume.ecore#//Resume">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Resume/skills"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Resume/accomplishments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Resume/employers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Resume/fullName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Resume/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Resume/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Resume/phone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Resume.ecore#//Resume/references"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Resume/homepage"/>
     </genClasses>
     <genClasses ecoreClass="Resume.ecore#//Skill">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Resume.ecore#//Skill/name"/>
