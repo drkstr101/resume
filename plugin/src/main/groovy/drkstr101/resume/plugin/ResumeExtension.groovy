@@ -8,6 +8,7 @@ import javax.inject.Inject
 import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.model.ObjectFactory
 
+import drkstr101.resume.plugin.model.Accomplishment
 import drkstr101.resume.plugin.model.Employment
 import drkstr101.resume.plugin.model.Skill
 
@@ -24,12 +25,18 @@ class ResumeExtension {
 	String address
 
 	String phone
-	
-	final NamedDomainObjectContainer<Skill> skills = 
+
+	final NamedDomainObjectContainer<Accomplishment> accomplishments =
+			objectFactory.domainObjectContainer(Accomplishment)
+
+	final NamedDomainObjectContainer<Skill> skills =
 			objectFactory.domainObjectContainer(Skill)
-			
-	final NamedDomainObjectContainer<Employment> employers = 
+
+	final NamedDomainObjectContainer<Employment> employers =
 			objectFactory.domainObjectContainer(Employment)
+
+	final NamedDomainObjectContainer<Reference> references =
+			objectFactory.domainObjectContainer(Reference)
 
 	@Inject
 	ObjectFactory getObjectFactory() {

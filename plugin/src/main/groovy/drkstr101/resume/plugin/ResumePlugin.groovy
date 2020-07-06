@@ -20,14 +20,5 @@ public class ResumePlugin implements Plugin<Project> {
 		project.pluginManager.apply(BasePlugin)
 
 		final ResumeExtension resume = project.extensions.create('resume', ResumeExtension)
-
-		// Add a task to validate all input data
-		final TaskProvider<Task> validateResume = project.tasks.register("validateResumeModel") {
-			doLast {
-				logger.info("Resume model validation completed with no detected issues.")
-			}
-		}
-
-		project.tasks.getByName('check').dependsOn(validateResume)
 	}
 }

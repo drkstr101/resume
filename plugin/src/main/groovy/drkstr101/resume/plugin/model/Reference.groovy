@@ -1,20 +1,22 @@
 package drkstr101.resume.plugin.model
 
-import org.gradle.api.tasks.Input
-import org.gradle.model.Managed
-
 /**
  * @author Aaron R Miller
  *
  */
-@Managed
-interface Reference {
+class Reference {
 
-	@Input
-	String getDescripton()
-	void setDescripton(String descripton)
+	private final String name
 
-	@Input
-	URI getUri()
-	void setUri(URI uri)
+	String getName() {
+		return name;
+	}
+
+	String description
+
+	URI uri
+
+	Reference(String name) {
+		this.name = name
+	}
 }
