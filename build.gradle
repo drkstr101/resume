@@ -220,11 +220,11 @@ version = '2.0.0'
 //}
 
 
-//resume {
-//	fullName = 'Aaron R Miller'
-//	email = 'aaron.miller@waweb.io'
-//}
-//
+resume {
+	fullName = 'Aaron R Miller'
+	email = 'aaron.miller@waweb.io'
+}
+
 apply from: file('data/skills.groovy')
 //apply from: file('data/accomplishments.groovy')
 //apply from: file('data/employers.groovy')

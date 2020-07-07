@@ -48,4 +48,11 @@ class SkillExtension {
 				children: children.collect { it.toModel() }
 		)
 	}
+	
+	@Override
+	String toString() {
+		return label? label : name.split("_")
+				.collect({ it.capitalize() })
+				.join(" ")
+	}
 }

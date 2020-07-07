@@ -31,11 +31,4 @@ class Skill {
 
 	@Nested
 	Collection<Skill> children
-
-	@Override
-	String toString() {
-		return label? label : name.split("_")
-				.collect({ it.capitalize() })
-				.join(" ")
-	}
 }

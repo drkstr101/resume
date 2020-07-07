@@ -41,7 +41,7 @@ class SkillCloud extends DefaultTask {
 		def wordFrequencies = skillCalculator.calculateSkillWeights()
 		def wordCloudGenerator = new SkillCloudGenerator(wordFrequencies)
 
-		println "wordFrequencies = ${wordFrequencies}"
+		wordFrequencies.each { println it }
 		
 		// render the "Skill Cloud" image at the output location
 		wordCloudGenerator.generatePngImage(this.outputFile.get().asFile)
