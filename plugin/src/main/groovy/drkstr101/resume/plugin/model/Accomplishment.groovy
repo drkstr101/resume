@@ -13,7 +13,7 @@ class Accomplishment {
 	private final String name
 
 	String getName() {
-		return name;
+		return name
 	}
 
 	String label
@@ -25,7 +25,7 @@ class Accomplishment {
 	@Inject
 	protected ObjectFactory getObjectFactory() {
 		// Method body is ignored
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException()
 	}
 
 	Accomplishment(String name) {

@@ -9,7 +9,7 @@ class Employment {
 	private final String name
 
 	String getName() {
-		return name;
+		return name
 	}
 
 	String title
