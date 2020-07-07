@@ -13,7 +13,6 @@ import org.gradle.api.tasks.Optional
 
 import drkstr101.resume.plugin.model.Accomplishment
 import drkstr101.resume.plugin.model.Employment
-import drkstr101.resume.plugin.model.Skill
 
 /**
  * @author Aaron R Miller
@@ -40,8 +39,8 @@ class ResumeExtension {
 			objectFactory.domainObjectContainer(Accomplishment)
 
 	@Nested
-	final NamedDomainObjectContainer<Skill> skills =
-			objectFactory.domainObjectContainer(Skill)
+	final NamedDomainObjectContainer<SkillExtension> skills =
+			objectFactory.domainObjectContainer(SkillExtension)
 			
 	@Nested
 	final NamedDomainObjectContainer<Employment> employers =

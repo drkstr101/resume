@@ -1,47 +1,41 @@
+/**
+ * 
+ */
 package drkstr101.resume.plugin.model
 
-import javax.inject.Inject
-
-import org.gradle.api.NamedDomainObjectContainer
-import org.gradle.api.model.ObjectFactory
 import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.Nested
 import org.gradle.api.tasks.Optional
+
+import groovy.transform.Canonical
+
+
 
 /**
  * @author Aaron R Miller
  *
  */
+@Canonical
 class Skill {
 
-	private final String name
+	@Internal
+	Skill parent
 
 	@Input
-	String getName() {
-		return name
-	}
+	String name
 
 	@Optional
 	@Input
 	String label
 
 	@Nested
-	final NamedDomainObjectContainer<Skill> skills = objectFactory.domainObjectContainer(Skill)
-
-	@Inject
-	protected ObjectFactory getObjectFactory() {
-		// Method body is ignored
-		throw new UnsupportedOperationException()
-	}
-
-	Skill(String name) {
-		this.name = name
-	}
-
+	Collection<Skill> children
 
 	@Override
 	String toString() {
-		return this.label? this.label :
-				this.name.split("_").join(" ").capitalize()
+		return label? label : name.split("_")
+				.collect({ it.capitalize() })
+				.join(" ")
 	}
 }

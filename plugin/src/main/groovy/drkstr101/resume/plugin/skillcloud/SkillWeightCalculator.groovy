@@ -2,7 +2,7 @@ package drkstr101.resume.plugin.skillcloud
 
 import com.kennycason.kumo.WordFrequency
 
-import drkstr101.resume.plugin.model.Accomplishment
+import drkstr101.resume.plugin.ResumeExtension
 import drkstr101.resume.plugin.model.Skill
 
 /**
@@ -17,15 +17,12 @@ import drkstr101.resume.plugin.model.Skill
  */
 class SkillWeightCalculator {
 
-	Collection<Skill> skills
+	ResumeExtension resume
 
-	Collection<Accomplishment> accomplishments
-
-	SkillWeightCalculator(Collection<Skill> skills, Collection<Accomplishment> accomplishments) {
+	SkillWeightCalculator(ResumeExtension resume) {
 		super()
 
-		this.skills = skills
-		this.accomplishments = accomplishments
+		this.resume = resume
 	}
 
 	/**
@@ -34,8 +31,8 @@ class SkillWeightCalculator {
 	 * 
 	 * @return
 	 */
-	Iterable<WordFrequency> calculate() {
-		return this.skills
+	Collection<WordFrequency> calculateSkillWeights() {
+		return this.resume.skills
 				.collect { new WordFrequency(it.toString(), 1) }
 				.sort { a, b -> a.frequency <=> b.frequency }
 	}

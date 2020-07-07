@@ -8,13 +8,12 @@ import javax.inject.Inject
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.model.ObjectFactory
-import org.gradle.api.provider.ListProperty
+import org.gradle.api.provider.Property
 import org.gradle.api.tasks.Nested
 import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 
-import drkstr101.resume.plugin.model.Accomplishment
-import drkstr101.resume.plugin.model.Skill
+import drkstr101.resume.plugin.ResumeExtension
 
 /**
  * @author Aaron R Miller
@@ -23,10 +22,7 @@ import drkstr101.resume.plugin.model.Skill
 class SkillCloud extends DefaultTask {
 
 	@Nested
-	final ListProperty<Accomplishment> accomplishments = objectFactory.listProperty(Accomplishment)
-
-	@Nested
-	final ListProperty<Skill> skills = objectFactory.listProperty(Skill)
+	final Property<ResumeExtension> resume = objectFactory.property(ResumeExtension)
 
 	@OutputFile
 	final RegularFileProperty outputFile = objectFactory.fileProperty()
@@ -39,10 +35,15 @@ class SkillCloud extends DefaultTask {
 
 	@TaskAction
 	void run() {
-		def skillCalculator = new SkillWeightCalculator(skills.get(), accomplishments.get())
-		def wordCloudGenerator = new SkillCloudGenerator(skillCalculator.calculate())
+		println "Generating Skill Cloud..."
+		
+		def skillCalculator = new SkillWeightCalculator(this.resume.get())
+		def wordFrequencies = skillCalculator.calculateSkillWeights()
+		def wordCloudGenerator = new SkillCloudGenerator(wordFrequencies)
 
+		println "wordFrequencies = ${wordFrequencies}"
+		
 		// render the "Skill Cloud" image at the output location
-		wordCloudGenerator.writePng(this.outputFile.get().asFile)
+		wordCloudGenerator.generatePngImage(this.outputFile.get().asFile)
 	}
 }

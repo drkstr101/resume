@@ -36,10 +36,7 @@ class SkillCloudGenerator {
 		this.wordFrequencies = wordFrequencies
 	}
 
-	void writePng(final File outputFile) {
-		
-		println "Generating Skill Cloud..."
-		wordFrequencies.each { println it }
+	void generatePngImage(final File outputFile) {
 
 		final Dimension dimension = new Dimension(DEFAULT_IMG_WIDTH, DEFAULT_IMG_HEIGHT)
 
