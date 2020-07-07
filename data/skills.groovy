@@ -57,7 +57,6 @@ resume {
 			children {
 				dataviz { label = "Data Visualization" }
 				html5 { label = "HTML5/CSS3" }
-				flash { label = "Adobe Flash/Animate" }
 			}
 		}
 		systems {

@@ -35,14 +35,14 @@ class SkillCloud extends DefaultTask {
 
 	@TaskAction
 	void run() {
-		println "Generating Skill Cloud..."
+		final ResumeExtension resume = this.resume.get()
 		
-		def skillCalculator = new SkillWeightCalculator(this.resume.get())
+		def skillCalculator = new SkillWeightCalculator(resume)
 		def wordFrequencies = skillCalculator.calculateSkillWeights()
 		def wordCloudGenerator = new SkillCloudGenerator(wordFrequencies)
-
-		wordFrequencies.each { println it }
 		
+		wordFrequencies.each { println it }
+
 		// render the "Skill Cloud" image at the output location
 		wordCloudGenerator.generatePngImage(this.outputFile.get().asFile)
 	}

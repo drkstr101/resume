@@ -32,8 +32,8 @@ class SkillWeightCalculator {
 	 * @return
 	 */
 	Collection<WordFrequency> calculateSkillWeights() {
-		return this.resume.skills
-				.collect { new WordFrequency(it.toString(), 1) }
+		return this.resume.skillCache
+				.collect([]) { String k, Skill v -> new WordFrequency(v.toString(), v.weight) }
 				.sort { a, b -> a.frequency <=> b.frequency }
 	}
 }

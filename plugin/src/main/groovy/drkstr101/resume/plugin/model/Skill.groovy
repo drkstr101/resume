@@ -31,4 +31,14 @@ class Skill {
 
 	@Nested
 	Collection<Skill> children
+
+	@Input
+	Integer weight = 1
+
+	@Override
+	String toString() {
+		return label? label : name.split("_")
+				.collect({ it.capitalize() })
+				.join(" ")
+	}
 }

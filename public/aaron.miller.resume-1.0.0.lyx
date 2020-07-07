@@ -1,0 +1,1839 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/amiller/Workspace/drkstr101/resume/public/
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{aaron-r-miller}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Aaron R Miller
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "aaron-r-miller"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A highly professional software developer with over 12 years of experience
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename img/skillcoud-1.0.0.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Skill Cloud Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objective
+\series default
+
+\end_layout
+
+\begin_layout Standard
+Seeking new opportunities to develop software remotely as a 1099, C2C, or W2 contractor
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{work-experience}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Work Experience
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "work-experience"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{cartoonifyit-open-source-feb-2020---current}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CartoonifyIt @ Open Source (Feb 2020 - CURRENT)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cartoonifyit-open-source-feb-2020---current"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Developed Augmented Reality (AR) demo with Rust and Android NDK (in progress) https://github.com/drkstr101/CartoonifyIt
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ported the C++ Android NDKCamera sample app to Rust 
+\end_layout
+
+\begin_layout Itemize
+Created standalone crate to extend android-ndk with added support for NDKCamera FFI bindings 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Mobile Apps, C/++, Rust, FFI, Android NDK
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{earthnew.media-open-source-feb-2020---current}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+earthnew.media @ Open Source (Feb 2020 - CURRENT)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "earthnew.media-open-source-feb-2020---current"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Developing federated social media app from scratch as a teaching tool to help a friend learn to program (in progress) https://gitlab.com/earthnewmedia
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Produced project inception document with business case and specs for a 1.0 MVP release 
+\end_layout
+
+\begin_layout Itemize
+Implemented BDD style test suite for integration testing between decoupled web projects 
+\end_layout
+
+\begin_layout Itemize
+Created RESTful API with JWT client security for backend CRUD services and SPA for prototype UX 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, UI/UX Design, Domain Modeling, Product Development, Business Analysis, Mentor, NodeJs, React, Redux, SagasJs, Bootstrap, HTML5, REST, Serenity BDD, Typescript, Loopback 4
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{waweb-site-plugin-open-source-nov-2019---current}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+WaWeb Site Plugin @ Open Source (Nov 2019 - CURRENT)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "waweb-site-plugin-open-source-nov-2019---current"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Developed a collection of integrated Gradle plugins for static website development and publication https://gitlab.com/waweb/waweb-site-plugin (ref 200-beta)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Created suite of Gradle plugins, including support for JavaScript compilation, SASS, and extended Groovy Template Engine, with added support for markdown to HTML conversion in template definitions 
+\end_layout
+
+\begin_layout Itemize
+Developed reusable 
+\begin_inset Quotes eld
+\end_inset
+
+Steps
+\begin_inset Quotes erd
+\end_inset
+
+ library for Serenity BDD to easily test multiple Gradle plugins which may interact with each other in a test fixture 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, JDK, Gradle, Groovy, HTML5, Serenity BDD, Closure Compiler
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{resume-publisher-open-source-nov-2019---current}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resume Publisher @ Open Source (Nov 2019 - CURRENT)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "resume-publisher-open-source-nov-2019---current"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Developed Gradle plugin which publishes an html and docx format of my resume https://gitlab.com/aaron.miller/resume/
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Created Resume domain model and GUI editor using the Eclipse ECore modeling tools 
+\end_layout
+
+\begin_layout Itemize
+Created Gradle plugin which adds builder support and publishing capabilities for the Resume model, with outputs including an XMI data exchange format, static html site stylized docx,and 
+\begin_inset Quotes eld
+\end_inset
+
+Word Cloud
+\begin_inset Quotes erd
+\end_inset
+
+ image generation from skills listed in the model. 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, UI/UX Design, Domain Modeling, EMF/ECore, jQuery Mobile, Gradle, Groovy, JDK, HTML5, OOXML
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{ctoco-owner-washington-web-apps-aug-2019---current}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CTO/Co-Owner @ Washington Web Apps (Aug 2019 - CURRENT)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ctoco-owner-washington-web-apps-aug-2019---current"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Co-founder and chief technical lead at a software development consultancy
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{business-development}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Business Development
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "business-development"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Developed and produced a majority of the Lean Business Plan document, including an initial target market, product, sales/marketing, and pricing strategies 
+\end_layout
+
+\begin_layout Itemize
+Identified talents and negotiated partnerships to fill the roles of CFO and COO, to delegate responsibilities for legal, accounting, business development and growth 
+\end_layout
+
+\begin_layout Itemize
+Developed a basic reproducible sales process as a starting point used to train and onboard the COO, aiding them in the pursuit of sales growth 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Product Development, Business Analysis, Project Management, Business Strategy, Lean Planning, Sales
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{systems-engineering}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Systems Engineering
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "systems-engineering"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Created an append-only accounting system and tooling using a combination of plain text files, HLedger, and Git 
+\end_layout
+
+\begin_layout Itemize
+Developed proprietary project estimation and pricing tools using the Eclipse Modeling Framework (EMF), accounted for as IP Assets in the main ledger and providing the primary competitive advantage for the company 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Domain Modeling, Terraform, HLedger, Kubernetes, AWS, Google Cloud, Gradle, Groovy, Spring Boot, JDK, EMF/ECore, HTML5, ES6, Closure Compiler, Bootstrap
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{systems-engineer-wavsys-jan-2019---aug-2019}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Systems Engineer @ WAVSYS (Jan 2019 - Aug 2019)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "systems-engineer-wavsys-jan-2019---aug-2019"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Staff augmented Systems Engineer at Expedia Group
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Reduced maintenance cost by aiding in the transition of a legacy monolith project to a more modern automation framework 
+\end_layout
+
+\begin_layout Itemize
+Improved the efficiency of Stackstorm pack development by building and maintaining an automated acceptance testing and specification framework 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Vault, ServiceNow, Microservices, Kubernetes, C#/.NET, Python, Gradle, Stackstorm, Serenity BDD, JDK, Groovy
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{software-developer-catalyte-surge-it-services-aug-2017---aug-2018}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Software Developer @ Catalyte-Surge IT Services (Aug 2017 - Aug 2018)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "software-developer-catalyte-surge-it-services-aug-2017---aug-2018"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Software Engineer at an outsourcing and staff augmentation consultancy Kadlec Medical Group
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Removed primary blockers and reduced runtime memory footprint by an order of magnitude in an Electronic Medical Record (EMR) web application Programming, Microservices, REST, NodeJs, HTML5, ES6, Babel, Flow, ExpressJs, React, Redux, SagasJs, Domain Modeling Emory University 
+\end_layout
+
+\begin_layout Itemize
+Developed client-side module and built a release system for custom 2FA authentication, when using the AWS Command Line Interface within Emory University's internal network 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, AWS, Microservices, SOAP, Gradle, Spring Boot, JDK, Groovy, EAR
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{software-developer-vivid-learning-systems-oct-2010---apr-2017}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Software Developer @ Vivid Learning Systems (Oct 2010 - Apr 2017)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "software-developer-vivid-learning-systems-oct-2010---apr-2017"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sr.
+\begin_inset space ~
+
+\end_inset
+
+Software Engineer for eLearning based products and services company
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{sr.-programmer}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Sr.
+\begin_inset space ~
+
+\end_inset
+
+Programmer
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sr.-programmer"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Developed prototype mobile VR app used by the sales team to entice potential customers at trade shows 
+\end_layout
+
+\begin_layout Itemize
+Automated workflow for production department and drove the adoption of Continuous Integration into the development process 
+\end_layout
+
+\begin_layout Itemize
+Designed and developed front end framework to enable the production of Computer Aided Learning content as a fully Progressive Web App, eliminating the reliance on Flash/Air runtimes in flagship product 
+\end_layout
+
+\begin_layout Itemize
+Created prototype data service-oriented back-end architecture that supports user authentication and tracking for deployment scenarios outside a traditional LMS web portal, later adopted by another team as the basis for a rewrite to the backend LMS product 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Mobile Apps, C/++, JDK, Android NDK, Google VR, GearVR (Oculus), Unreal Engine, Apache Ant, DevOps, Systems Integration, Groovy, Gradle, Python, Jenkins, OSGI, Microservices, Progressive Web Apps, HTML5, Closure Compiler, Lodash, jQuery Mobile, CreateJs, NodeJs, C#/.NET, MS SQL Server, Entity Framework, Mentor
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{programmer-ii}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Programmer II
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "programmer-ii"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Implemented mobile compatible front-end architecture to bring a flagship product to the App/Play Store 
+\end_layout
+
+\begin_layout Itemize
+Maintained existing flagship product that delivers and tracks the usage of rich media content for Computer-Aided Learning (
+\begin_inset Quotes eld
+\end_inset
+
+eLearning
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Mobile Apps, UI/UX Design, Flash/Flex, Adobe Air, Python, Apache Ant, SCORM
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{ctoco-owner-open-base-interactive-oct-2008---sep-2010}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CTO/Co-Owner @ Open Base Interactive (Oct 2008 - Sep 2010)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ctoco-owner-open-base-interactive-oct-2008---sep-2010"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Co-founder and chief technical lead at a software development consultancy
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{nulabel-technologies}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+NuLabel Technologies
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "nulabel-technologies"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Worked with Director of Science to develop database-driven software systems that replaced existing spreadsheet-based workflow in use by the lab techs 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Product Development, Business Analysis, DevOps, Microservices, Programming, Mentor, UI/UX Design, JDK, Tomcat, Google Sheets, OAuth 2, Flash/Flex, Postgresql, Python, Jenkins, Data Visualization, Apache Ant, Domain Modeling
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{demand-lending}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Demand Lending
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "demand-lending"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Designed and developed the software systems for the flagship product of a Direct Lending startup 
+\end_layout
+
+\begin_layout Itemize
+Managed a team of developers to bring flagship product to market 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Product Development, Business Analysis, Project Management, Systems Architecture, Postgresql, Domain Modeling
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{all-student-rentals}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+All Student Rentals
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "all-student-rentals"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Created client-server marketplace of rental properties for the winner of the 
+\begin_inset Quotes eld
+\end_inset
+
+Best Business Idea
+\begin_inset Quotes erd
+\end_inset
+
+ contest at California State University 
+\end_layout
+
+\begin_layout Itemize
+Integrated phone service with back-end systems to automatically detect billable leads, through the use of auto-generated extension numbers shown in the front-end app, keyed by listing and vendor ID 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Product Development, Programming, UI/UX Design, Flash/Flex, Microservices, Google Analytics, HTML5, Systems Integration, Postgresql
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{ctoco-owner-splash-labs-aug-2007---oct-2008}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CTO/Co-Owner @ Splash Labs (Aug 2007 - Oct 2008)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ctoco-owner-splash-labs-aug-2007---oct-2008"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Co-founder and chief technical lead at a software development consultancy
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{team08-snowboards}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Team08 Snowboards
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "team08-snowboards"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Developed a Fullstack system to enable custom snowboard designs to be created and purchased online 
+\end_layout
+
+\begin_layout Itemize
+Integrated back-end database systems with CAD manufacturing systems to automatically produce working specs from the web-based designer utility in the store front-end 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, UI/UX Design, Flash/Flex, PHP, Magento, MySQL, Systems Integration
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{developers-research}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Developers Research
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "developers-research"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tightlist
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Created the main company website and simple CMS system for adding or removing content Programming, HTML5, PHP Digg Charts 
+\end_layout
+
+\begin_layout Itemize
+Created the DiggCharts app which won second place in the Digg.com API data visualizations contest 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Programming, Flash/Flex, UI/UX Design, Programming, Digg API, Data Visualization
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{gmailfs-howto-open-source-may-2006---may-2006}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+GMailFS HOWTO @ Open Source (May 2006 - May 2006)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "gmailfs-howto-open-source-may-2006---may-2006"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wrote and published the GMailFS HOWTO: A guide to Using Your GMail Account as a Linux File System
+\end_layout
+
+\begin_layout Standard
+http://gmailfs-howto.waweb.io/
+\end_layout
+
+\begin_layout Standard
+Python
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{loan-officer-north-coast-credit-union-feb-2006---jun-2007}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Loan Officer @ North Coast Credit Union (Feb 2006 - Jun 2007)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "loan-officer-north-coast-credit-union-feb-2006---jun-2007"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Home, auto, and line of credit Loan Officer at a local credit union
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{funding-analyst-hsbc-apr-2004---oct-2005}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Funding Analyst @ HSBC (Apr 2004 - Oct 2005)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "funding-analyst-hsbc-apr-2004---oct-2005"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Processed auto loan packages for fraud prior to releasing funds
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{dealer-service-manager-capital-one-jun-2003---apr-2004}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Dealer Service Manager @ Capital One (Jun 2003 - Apr 2004)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "dealer-service-manager-capital-one-jun-2003---apr-2004"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inbound call center for finance managers at auto dealership
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+hypertarget{funding-analyst-capital-one-jan-2003---jun-2003}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Funding Analyst @ Capital One (Jan 2003 - Jun 2003)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "funding-analyst-capital-one-jan-2003---jun-2003"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Processed auto loan packages for fraud prior to releasing funds 
+\end_layout
+
+\end_body
+\end_document

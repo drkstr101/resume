@@ -51,8 +51,6 @@ class SkillExtension {
 	
 	@Override
 	String toString() {
-		return label? label : name.split("_")
-				.collect({ it.capitalize() })
-				.join(" ")
+		return "Skill(${name})"
 	}
 }
