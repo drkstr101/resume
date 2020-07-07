@@ -11,19 +11,19 @@ import spock.lang.Specification
  * A simple unit test for the 'drkstr101.resume.plugin.greeting' plugin.
  */
 public class ResumePluginTest extends Specification {
-    def "plugin registers task"() {
+    def "plugin registers tasks"() {
         given:
         def project = ProjectBuilder.builder().build()
 
         when:
         project.plugins.apply("drkstr101.resume")
-
-        then:
-        project.tasks.findByName("clean") != null
-        project.tasks.findByName("build") != null
-        project.tasks.findByName("check") != null
 		
-		and:
-        project.extensions.findByName("resume") != null
+		then:
+        def resume = project.extensions.findByName("resume")
+		def skillCloud = project.tasks.findByName("skillCloud")
+
+        resume != null
+        skillCloud != null
+		skillCloud.resume.get() == resume
     }
 }
