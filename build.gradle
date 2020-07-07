@@ -4,6 +4,7 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds
  */
+import groovy.json.*
 
 plugins {
 	id 'eclipse'
@@ -14,6 +15,17 @@ plugins {
 
 group = 'drkstr101'
 version = '2.0.0'
+
+Calendar tocal(int year, int month) {
+	return Calendar.getInstance().tap {
+		set(Calendar.YEAR, year)
+		set(Calendar.MONTH, month)
+		set(Calendar.HOUR_OF_DAY, 0)
+		set(Calendar.MINUTE, 0)
+		set(Calendar.SECOND, 0)
+		set(Calendar.MILLISECOND, 0)
+	}
+}
 
 resume {
 	fullName = "Aaron R Miller"
@@ -34,14 +46,20 @@ resume {
 				web {
 					label = "Web Applications"
 					skills {
-						pwa { label = "Progressive Web Apps" }
+						pwa {
+							label = "Progressive Web Apps"
+						}
 						closure_compiler
-						jquery_mobile { label = "jQuery Mobile" }
+						jquery_mobile {
+							label = "jQuery Mobile"
+						}
 						bootstrap
 						createjs
 						nodejs {
 							skills {
-								react { label = "Rect/Redux"}
+								react {
+									label = "Rect/Redux"
+								}
 								flow
 								expressjs
 								typescript
@@ -52,7 +70,9 @@ resume {
 				flash {
 					skills {
 						flex
-						as3 { label = "Actionscript 3" }
+						as3 {
+							label = "Actionscript 3"
+						}
 					}
 				}
 				php
@@ -73,44 +93,76 @@ resume {
 		ux {
 			label = "UI/UX"
 			skills {
-				viz { label = "Data Visualization" }
-				html5 { label = "HTML5/CSS3" }
-				flash { label = "Adobe Flash/Animate" }
+				viz {
+					label = "Data Visualization"
+				}
+				html5 {
+					label = "HTML5/CSS3"
+				}
+				flash {
+					label = "Adobe Flash/Animate"
+				}
 			}
 		}
 		systems {
 			skills {
 				database {
 					skills {
-						mysql { label = "MySQL/Maria" }
-						postgres { label = "Postgresql" }
-						msql { label = "MS SQL Server" }
+						mysql {
+							label = "MySQL/Maria"
+						}
+						postgres {
+							label = "Postgresql"
+						}
+						msql {
+							label = "MS SQL Server"
+						}
 					}
 				}
 				api {
 					label = "API"
 					skills {
-						rest { label = "REST" }
-						soap { label = "SOAP" }
-						scorm { label = "SCORM" }
-						oauth2 { label = "OAuth 2" }
+						rest {
+							label = "REST"
+						}
+						soap {
+							label = "SOAP"
+						}
+						scorm {
+							label = "SCORM"
+						}
+						oauth2 {
+							label = "OAuth 2"
+						}
 						value
-						servicenow { label = "ServiceNow" }
+						servicenow {
+							label = "ServiceNow"
+						}
 						google_sheets
-						emf { label = "EMF/ECore" }
+						emf {
+							label = "EMF/ECore"
+						}
 					}
 				}
 				mobile {
 					skills {
-						air { label = "Adobe AIR" }
+						air {
+							label = "Adobe AIR"
+						}
 						unreal_engine
-						gvr { label = "GVR/Oculus" }
-						android_ndk { label = "Android NDK" }
+						gvr {
+							label = "GVR/Oculus"
+						}
+						android_ndk {
+							label = "Android NDK"
+						}
 					}
 				}
 				ecommerce {
 					label = "eCommerce"
-					skills { magento }
+					skills {
+						magento
+					}
 				}
 			}
 		}
@@ -120,8 +172,12 @@ resume {
 				jenkins
 				apache_ant
 				gradle
-				aws { label = "Amazon Web Services" }
-				gcs { label = "Google Cloud Services" }
+				aws {
+					label = "Amazon Web Services"
+				}
+				gcs {
+					label = "Google Cloud Services"
+				}
 				kubernetes
 				stackstorm
 				terraform
@@ -134,17 +190,73 @@ resume {
 	}
 
 	employers {
-		waweb
-		expedia
-		surge
-		nulabel
-		vivid
-		all_student_rentals
-		team08
-		splash_labs
-		nccu
-		hsbc
-		capital_one
+		waweb {
+			employer = "Washington Web Apps"
+			type = "Self"
+			startDate = tocal(2019, 06)
+		}
+		expedia {
+			employer = "Expedia Group / WAVSYS"
+			type = "Direct1099"
+			startDate = tocal(2018, 11)
+			endDate = tocal(2019, 06)
+		}
+		surge  {
+			employer = "Catalyte-Surge IT Services"
+			type = "Direct1099"
+			startDate = tocal(2017, 10)
+			endDate = tocal(2018, 06)
+		}
+		nulabel {
+			employer = "NuLabel Technologies"
+			type = "Direct1099"
+			startDate = tocal(2017, 05)
+			endDate = tocal(2018, 07)
+		}
+		vivid {
+			employer = "Vivid Learning Systems"
+			type = "DirectW2"
+			startDate = tocal(2010, 10)
+			endDate = tocal(2017, 04)
+		}
+		demand_lending {
+			employer = "Demand Lending"
+			type = "CorpToCorp"
+			// startDate = TODO
+		}
+		all_student_rentals {
+			employer = "All Student Rentals"
+			type = "CorpToCorp"
+			// startDate = TODO
+		}
+		team08 {
+			employer = "Team08 Snowboards"
+			type = "CorpToCorp"
+			// startDate = TODO
+		}
+		splash_labs {
+			employer = "Splash Labs"
+			type = "Self"
+			// startDate = TODO
+		}
+		nccu {
+			employer = "North Coast Credit Union"
+			type = "DirectW2"
+			startDate = tocal(2006, 02)
+			endDate = tocal(2007, 06)
+		}
+		hsbc {
+			employer = "HSBC"
+			type = "DirectW2"
+			startDate = tocal(2004, 04)
+			endDate = tocal(2005, 10)
+		}
+		capital_one {
+			employer = "Capital One"
+			type = "DirectW2"
+			startDate = tocal(2004, 04)
+			endDate = tocal(2003, 01)
+		}
 	}
 
 	references {
