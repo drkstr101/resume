@@ -61,7 +61,7 @@ resume {
 				}
 				flash {
 					skills {
-						flex
+						flex { label = "Apache Flex" }
 						as3 { label = "Actionscript 3" }
 					}
 				}
@@ -140,7 +140,19 @@ resume {
 	}
 
 	accomplishments {
-		// TODO...
+		ap_credits {
+			type = Academic
+		}
+		varsity_debate {
+			type = Academic
+		}
+		
+		childrens_center {
+			type = Volunteer
+		}
+		playground_of_dreams {
+			type = Volunteer			
+		}
 	}
 
 	employers {
