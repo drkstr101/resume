@@ -229,3 +229,7 @@ resume {
 		// TODO...
 	}
 }
+
+skillCloud {
+	outputFile = file("public/img/skillcloud-${version}.png")
+}

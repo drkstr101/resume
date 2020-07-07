@@ -6,6 +6,7 @@ import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.model.ObjectFactory
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.Nested
+import org.gradle.api.tasks.Optional
 
 /**
  * @author Aaron R Miller
@@ -15,10 +16,13 @@ class Skill {
 
 	private final String name
 
+	@Input
 	String getName() {
 		return name
 	}
 
+	@Optional
+	@Input
 	String label
 
 	@Nested
@@ -32,5 +36,12 @@ class Skill {
 
 	Skill(String name) {
 		this.name = name
+	}
+
+
+	@Override
+	String toString() {
+		return this.label? this.label :
+				this.name.split("_").join(" ").capitalize()
 	}
 }
