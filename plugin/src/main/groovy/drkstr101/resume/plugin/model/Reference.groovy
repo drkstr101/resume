@@ -2,26 +2,13 @@ package drkstr101.resume.plugin.model
 
 import org.gradle.api.tasks.Input
 
+import groovy.transform.Canonical
+
 /**
  * @author Aaron R Miller
  *
  */
+@Canonical
 class Reference {
-
-	private final String name
-
-	@Input
-	String getName() {
-		return name
-	}
-
-	@Input
-	String description
-
-	@Input
-	URI uri
-
-	Reference(String name) {
-		this.name = name
-	}
+	@Input String name
 }

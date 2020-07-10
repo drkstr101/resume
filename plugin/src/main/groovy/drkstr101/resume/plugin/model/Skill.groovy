@@ -9,6 +9,7 @@ import org.gradle.api.tasks.Nested
 import org.gradle.api.tasks.Optional
 
 import groovy.transform.Canonical
+import groovy.transform.Immutable
 
 
 
@@ -18,27 +19,9 @@ import groovy.transform.Canonical
  */
 @Canonical
 class Skill {
-
-	@Internal
-	Skill parent
-
-	@Input
-	String name
-
-	@Optional
-	@Input
-	String label
-
-	@Nested
-	Collection<Skill> children
-
-	@Input
-	Integer weight = 1
-
-	@Override
-	String toString() {
-		return label? label : name.split("_")
-				.collect({ it.capitalize() })
-				.join(" ")
-	}
+	@Input String name
+	@Optional @Input String label
+	@Input Integer weight = 1
+	@Internal Skill parent
+	@Nested Collection<Skill> children = []
 }

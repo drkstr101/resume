@@ -7,8 +7,10 @@ resume {
 				project_management
 				domain_modeling
 				finance
-				mathematics
+				maths = { label = "Mathematics" }
 				communication
+				compsci
+				sys_admin { label = "Administrator" }
 			}
 		}
 		programming {
@@ -23,7 +25,9 @@ resume {
 						createjs
 						nodejs {
 							children {
-								react { label = "Rect/Redux" }
+								react
+								redux
+								sagasjs
 								flow
 								expressjs
 								typescript
@@ -93,6 +97,8 @@ resume {
 					label = "eCommerce"
 					children { magento }
 				}
+				linux { weight = 5 }
+				windows { weight = 3 }
 			}
 		}
 		devops {
