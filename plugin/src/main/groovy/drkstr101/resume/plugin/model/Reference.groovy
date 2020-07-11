@@ -10,5 +10,6 @@ import groovy.transform.Canonical
  */
 @Canonical
 class Reference {
-	@Input String name
+	String name
+	String description
 }

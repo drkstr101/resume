@@ -74,7 +74,12 @@ resume {
 			description = '''
 				Developing an Augmented Reality (AR) demo application with Rust and Android NDK
 			'''.stripIndent()
-			skills = ['mobile', 'android_ndk', 'rust', 'cpp']
+			skills = [
+				'mobile',
+				'android_ndk',
+				'rust',
+				'cpp'
+			]
 			references = ['cartoonifyit']
 		}
 		earthnewmedia {
@@ -91,7 +96,7 @@ resume {
 				'business_analysis',
 				'sagasjs',
 				'bootstrap',
-				'rest'
+				'rest',
 				'serenity_bdd',
 				'typescript',
 				'loopback_4'
@@ -137,7 +142,15 @@ resume {
 			description = '''
 				Developed a Fullstack system to enabled custom snowboard designs to be created and purchased in a a web store front
 			'''.stripIndent()
-			skills = ['flex', 'as3', 'php', 'magento', 'linux', 'mysql', 'sys_admin']
+			skills = [
+				'flex',
+				'as3',
+				'php',
+				'magento',
+				'linux',
+				'mysql',
+				'sys_admin'
+			]
 		}
 		obi_allstudent {
 			type = 'Professional'
@@ -146,7 +159,17 @@ resume {
 			description = '''
 				Created client-server marketplace of rental properties for the winner of the "Best Business Idea" contest at California State University
 			'''.stripIndent()
-			skills = ['product_development', 'project_management', 'ux', 'flex', 'as3', 'html5', 'sys_admen', 'postgres', 'linux']
+			skills = [
+				'product_development',
+				'project_management',
+				'ux',
+				'flex',
+				'as3',
+				'html5',
+				'sys_admin',
+				'postgres',
+				'linux'
+			]
 		}
 		obi_demandlending {
 			type = 'Professional'
@@ -155,7 +178,14 @@ resume {
 			description = '''
 				Designed and developed the software systems for the flagship product of a Direct Lending startup
 			'''.stripIndent()
-			skills = ['product_development', 'project_management', 'domain_modeling', 'postgres', 'linux', 'maths']
+			skills = [
+				'product_development',
+				'project_management',
+				'domain_modeling',
+				'postgres',
+				'linux',
+				'maths'
+			]
 		}
 		obi_nulabel {
 			type = 'Professional'
@@ -171,7 +201,7 @@ resume {
 				'jenkins',
 				'microservices',
 				'ux',
-				'java',
+				'jdk',
 				'tomcat',
 				'oauth2',
 				'htm5',

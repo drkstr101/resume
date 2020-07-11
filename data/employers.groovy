@@ -55,7 +55,6 @@ resume {
 		open_base {
 			employer = 'Open Base Ineractive,'
 			type = 'Self'
-			// startDate = TODO
 		}
 		nccu {
 			employer = 'North Coast Credit Union'

@@ -7,10 +7,11 @@ resume {
 				project_management
 				domain_modeling
 				finance
-				maths = { label = "Mathematics" }
+				maths { label = "Mathematics" }
 				communication
 				compsci
 				sys_admin { label = "Administrator" }
+				sales
 			}
 		}
 		programming {
@@ -18,6 +19,7 @@ resume {
 				web {
 					label = "Web Applications"
 					children {
+						htm5 { label = "HTML5" }
 						pwa { label = "Progressive Web Apps" }
 						closure_compiler
 						jquery_mobile { label = "jQuery Mobile" }
@@ -31,6 +33,7 @@ resume {
 								flow
 								expressjs
 								typescript
+								loopback_4
 							}
 						}
 					}
@@ -54,6 +57,27 @@ resume {
 				cpp
 				cs
 				rust
+				mobile {
+					label = "Mobile Applications"
+					children {
+						air { label = "Adobe AIR" }
+						unreal_engine
+						gvr { label = "GVR/Oculus" }
+						android_ndk { label = "Android NDK" }
+					}
+				}
+				ecommerce {
+					label = "eCommerce"
+					children { magento }
+				}
+				test {
+					children {
+						serenity_bdd { label = "Serenity BDD" }
+						cucumber
+						mocha
+						jbehave { label = "JBehave" }
+					}
+				}
 			}
 		}
 		ux {
@@ -85,20 +109,6 @@ resume {
 						emf { label = "EMF/ECore" }
 					}
 				}
-				mobile {
-					children {
-						air { label = "Adobe AIR" }
-						unreal_engine
-						gvr { label = "GVR/Oculus" }
-						android_ndk { label = "Android NDK" }
-					}
-				}
-				ecommerce {
-					label = "eCommerce"
-					children { magento }
-				}
-				linux { weight = 5 }
-				windows { weight = 3 }
 			}
 		}
 		devops {
@@ -112,6 +122,10 @@ resume {
 				kubernetes
 				stackstorm
 				terraform
+				microservices
+				tomcat
+				linux
+				windows
 			}
 		}
 	}

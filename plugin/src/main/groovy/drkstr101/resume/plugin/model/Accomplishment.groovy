@@ -15,11 +15,11 @@ import groovy.transform.Canonical
  */
 @Canonical
 class Accomplishment {
-	@Input String name
-	@Input AccomplishmentType type
-	@Input Calendar startDate
-	@Optional @Input Calendar endDate
-	@Input String description
-	@Nested Set<Reference> references = []
-	@Nested Set<Skill> skills = []
+	String name
+	AccomplishmentType type
+	Calendar startDate
+	Calendar endDate
+	String description
+	Collection<Reference> references = []
+	Collection<Skill> skills = []
 }

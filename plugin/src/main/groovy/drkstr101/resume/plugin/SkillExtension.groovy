@@ -5,6 +5,9 @@ import javax.inject.Inject
 import org.gradle.api.Named
 import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.model.ObjectFactory
+import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Nested
+import org.gradle.api.tasks.Optional
 
 /**
  * @author Aaron R Miller
@@ -14,18 +17,14 @@ class SkillExtension implements Named {
 
 	private final String name
 
+	@Input
 	String getName() {
 		return name
 	}
 
-	String label
-
-	final NamedDomainObjectContainer<SkillExtension> children
-
-	protected ObjectFactory getObjectFactory() {
-		// Method body is ignored
-		throw new UnsupportedOperationException()
-	}
+	@Optional @Input String label
+	
+	@Nested final NamedDomainObjectContainer<SkillExtension> children
 
 	@Inject
 	SkillExtension(String name, ObjectFactory objectFactory) {

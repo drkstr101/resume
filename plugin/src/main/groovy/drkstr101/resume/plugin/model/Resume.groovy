@@ -3,12 +3,7 @@
  */
 package drkstr101.resume.plugin.model
 
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.Nested
-import org.gradle.api.tasks.Optional
-
 import groovy.transform.Canonical
-import groovy.transform.Immutable
 
 /**
  * @author Aaron R Miller
@@ -16,12 +11,33 @@ import groovy.transform.Immutable
  */
 @Canonical
 class Resume {
-	@Input String fullName
-	@Input String email
-	@Optional @Input String address
-	@Optional @Input String phone
-	@Nested Map<String, Skill> skills = [:]
-	@Nested Map<String, Accomplishment> accomplishments = [:]
-	@Nested Map<String, Employment> employers = [:]
-	@Nested Map<String, Reference> references = [:]
+	String fullName
+	String email
+	String address
+	String phone
+	Map<String, Skill> skillsByName = [:]
+	Collection<Accomplishment> accomplishments = []
+	Collection<Employment> employers = []
+	Collection<Reference> references = []
+	
+	Reference referenceNamed(String name) {
+		def model = this.references.find { it.name == name }
+		if(!model) throw new RuntimeException("Reference ${name} does not exist")
+		
+		return model
+	}
+	
+	Accomplishment accomplishmentNamed(String name) {
+		def model = this.accomplishments.find { it.name == name }
+		if(!model) throw new RuntimeException("Accomplishment ${name} does not exist")
+		
+		return model
+	}
+	
+	Employment employmentNamed(String name) {
+		def model = this.employers.find { it.name == name }
+		if(!model) throw new RuntimeException("Reference ${name} does not exist")
+		
+		return model
+	}
 }

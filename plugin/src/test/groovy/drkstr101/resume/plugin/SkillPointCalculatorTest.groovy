@@ -2,10 +2,9 @@
  * 
  */
 package drkstr101.resume.plugin
+import org.gradle.testfixtures.ProjectBuilder
 
-import drkstr101.resume.plugin.model.Accomplishment
-import drkstr101.resume.plugin.model.Resume
-import drkstr101.resume.plugin.model.Skill
+import drkstr101.resume.plugin.calc.SkillPointCalculator
 import spock.lang.Specification
 
 /**
@@ -14,41 +13,31 @@ import spock.lang.Specification
  */
 class SkillPointCalculatorTest extends Specification {
 
-	static def accomp(String name, String... skills) {
-		new Accomplishment(name: name, skills: skills)
-	}
-
-	static def skill(String name, Skill... children) {
-		def skill = new Skill(name: name, children: children)
-		children.each { it.parent = skill }
-
-		return skill
-	}
-
 	def shouldCalculateBaseSkillPoints() {
 
 		given:
-		def resume = new Resume()
-		resume.skills = [
-			ska: skill('ska'),
-			skb: skill('skb', skill('skb_a')),
-			skc: skill('skc', skill('skc_a', skill('skc_a_a')))
-		]
-		resume.accomplishments = [
-			aca: accomp('aca', 'ska', 'skb_a'),
-			acb: accomp('acb', 'ska', 'skb', 'skc_a_a')
-		]
+		def project = ProjectBuilder.builder().build()
+		def newInstance = project.objects.&newInstance
+
+		ResumeExtension resume = newInstance(ResumeExtension)
+		resume.skills << newInstance(SkillExtension, "ska")
+		resume.skills << newInstance(SkillExtension, "skb")
+		
+		resume.accomplishments << newInstance(AccomplishmentExtension, "aca")
+				.tap { skills = ['ska'] }
+		
+		resume.accomplishments << newInstance(AccomplishmentExtension, "acb")
+				.tap { skills = ['skb'] }
 
 		when:
-		def calc = new SkillPointCalculator(resume).calculate()
+		def provider = new ResumeModelProvider(resume)
+		def calc = new SkillPointCalculator(provider.get()).calculate()
 
 		then:
 		assert calc != null
-		assert calc.get('ska') == 1
-		assert calc.get('skb') == 2
-		assert calc.get('skb_a') == 1
-		assert calc.get('skc') == 3
-		assert calc.get('skc_a') == 2
-		assert calc.get('skc_a_a') == 1
+		assert !calc.skillPoints.isEmpty()
+		assert calc.skillPoints.ska == 20
+		assert calc.skillPoints.skb == 20
+		assert calc.totalSkillPoints == 40
 	}
 }

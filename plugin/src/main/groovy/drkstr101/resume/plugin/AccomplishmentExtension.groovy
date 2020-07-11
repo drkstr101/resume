@@ -4,6 +4,8 @@ import javax.inject.Inject
 
 import org.gradle.api.Named
 import org.gradle.api.model.ObjectFactory
+import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Optional
 
 import drkstr101.resume.plugin.model.AccomplishmentType
 
@@ -15,21 +17,22 @@ class AccomplishmentExtension implements Named {
 
 	private final String name
 
+	@Input
 	String getName() {
 		return name
 	}
 
-	AccomplishmentType type
+	@Input AccomplishmentType type
 
-	String description
+	@Optional @Input String description
 
-	Calendar startDate
+	@Optional @Input Calendar startDate
 
-	Calendar endDate
+	@Optional @Input Calendar endDate
 
-	Set<String> references = []
+	@Input Set<String> references = []
 	
-	Set<String> skills = []
+	@Input Set<String> skills = []
 
 	@Inject
 	AccomplishmentExtension(String name, ObjectFactory objectFactory) {

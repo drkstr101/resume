@@ -3,6 +3,7 @@
  */
 import static drkstr101.resume.plugin.model.AccomplishmentType.*
 import static drkstr101.resume.plugin.model.EmploymentType.*
+import drkstr101.resume.plugin.SkillCloud
 import drkstr101.resume.plugin.ResumeModelProvider
 
 plugins {
@@ -22,19 +23,6 @@ resume {
 }
 
 apply from: file('data/skills.groovy')
+apply from: file('data/references.groovy')
 apply from: file('data/accomplishments.groovy')
 apply from: file('data/employers.groovy')
-apply from: file('data/references.groovy')
-
-//skillCloud {
-//	outputFile = file("public/img/skillcloud-${version}.png")
-//}
-
-build {
-	doLast {
-		println "Loading model provider..."
-		def provider = new ResumeModelProvider(resume)
-		def resume = provider.get()
-		println resume
-	}
-}

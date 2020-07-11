@@ -43,47 +43,52 @@ public class ModelProviderTest extends Specification {
 		assert model != null
 		
 		// Assert skills
-		assert !model.skills.isEmpty()
-		assert model.skills.get('sk1').name == "sk1"
-		assert model.skills.get('sk2').name == "sk2"
+		assert !model.skillsByName.isEmpty()
+		assert model.skillsByName.sk1.name == "sk1"
+		assert model.skillsByName.sk2.name == "sk2"
 		
 		// Assert references
 		assert !model.references.isEmpty()
-		assert model.references.get('ref1').name == "ref1"
-		assert model.references.get('ref2').name == "ref2"
+		assert model.referenceNamed('ref1') != null
+		assert model.referenceNamed('ref2') != null
 		
 		// Assert accomplishments
 		assert !model.accomplishments.isEmpty()
-		assert model.accomplishments.get('aca').name == "aca"
-		assert model.accomplishments.get('aca')
+		assert model.accomplishmentNamed('aca') != null
+		assert model.accomplishmentNamed('acb') != null
+		assert model.accomplishmentNamed('acc') != null
+		
+		assert model.accomplishmentNamed('aca')
 				.skills
 				.collect({ it.name }) == ["sk1"]
-		assert model.accomplishments.get('aca')
+		assert model.accomplishmentNamed('aca')
 				.references
 				.collect({ it.name }) == ["ref1", "ref2"]
 				
-		assert model.accomplishments.get('acb').name == "acb"
-		assert model.accomplishments.get('acb')
+		assert model.accomplishmentNamed('acb')
 				.skills
 				.collect({ it.name }) == ["sk1", "sk2"]
-		assert model.accomplishments.get('acb')
+		assert model.accomplishmentNamed('acb')
 				.references
 				.collect({ it.name }) == ["ref2"]
 		
-		assert model.accomplishments.get('acc').name == "acc"
-		assert model.accomplishments.get('acc')
+		assert model.accomplishmentNamed('acc')
 				.skills
 				.collect({ it.name }) == ["sk2"]
-		assert model.accomplishments.get('acc')
+		assert model.accomplishmentNamed('acc')
 				.references.isEmpty()
 			
 		
 		// Assert employers
 		assert !model.employers.isEmpty()
-		assert model.employers.get('ema')
+		assert model.employmentNamed('ema') != null
+		assert model.employmentNamed('emb') != null
+		
+		assert model.employmentNamed('ema')
 				.accomplishments
 				.collect({ it.name }) == ["aca"]
-		assert model.employers.get('emb')
+				
+		assert model.employmentNamed('emb')
 				.accomplishments
 				.collect({ it.name }) == ["acb"]
 	}
