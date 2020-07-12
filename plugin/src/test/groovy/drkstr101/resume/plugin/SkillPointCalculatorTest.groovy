@@ -4,7 +4,7 @@
 package drkstr101.resume.plugin
 import org.gradle.testfixtures.ProjectBuilder
 
-import drkstr101.resume.plugin.calc.SkillPointCalculator
+import drkstr101.resume.plugin.calculator.SkillPointCalculator
 import spock.lang.Specification
 
 /**

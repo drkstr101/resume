@@ -1,9 +1,9 @@
 /**
  * 
  */
-package drkstr101.resume.plugin.calc
+package drkstr101.resume.plugin.calculator
 
-import static drkstr101.resume.plugin.calc.CalculatorUtil.*
+import static drkstr101.resume.plugin.calculator.CalculatorUtil.*
 
 import drkstr101.resume.plugin.model.Accomplishment
 import drkstr101.resume.plugin.model.Resume

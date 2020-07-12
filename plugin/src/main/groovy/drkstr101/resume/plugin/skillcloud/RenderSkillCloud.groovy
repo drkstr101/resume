@@ -1,7 +1,7 @@
 /**
  * 
  */
-package drkstr101.resume.plugin
+package drkstr101.resume.plugin.skillcloud
 
 import java.awt.Color
 import java.awt.Dimension
@@ -27,7 +27,7 @@ import com.kennycason.kumo.bg.RectangleBackground
 import com.kennycason.kumo.font.scale.LinearFontScalar
 import com.kennycason.kumo.palette.ColorPalette
 
-import drkstr101.resume.plugin.calc.SkillPointCalculator
+import drkstr101.resume.plugin.calculator.SkillPointCalculator
 import drkstr101.resume.plugin.model.Resume
 import drkstr101.resume.plugin.model.Skill
 

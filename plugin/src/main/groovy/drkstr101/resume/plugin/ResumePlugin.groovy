@@ -8,6 +8,8 @@ import org.gradle.api.Project
 import org.gradle.api.Task
 import org.gradle.api.plugins.BasePlugin
 
+import drkstr101.resume.plugin.skillcloud.RenderSkillCloud
+
 /**
  * @author Aaron R Miller
  *

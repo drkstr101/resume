@@ -1,7 +1,7 @@
 /**
  * 
  */
-package drkstr101.resume.plugin.calc
+package drkstr101.resume.plugin.calculator
 
 /**
  * @author Aaron R Miller
