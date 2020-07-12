@@ -35,7 +35,7 @@ import drkstr101.resume.plugin.model.Skill
  * @author Aaron R Miller
  *
  */
-class SkillCloud extends DefaultTask {
+class RenderSkillCloud extends DefaultTask {
 
 	static String displayNameFor(Skill skill) {
 		return skill.label? skill.label :
@@ -69,7 +69,7 @@ class SkillCloud extends DefaultTask {
 
 
 	@Inject
-	SkillCloud(ObjectFactory objectFactory, ProviderFactory providerFactory, ProjectLayout layout) {
+	RenderSkillCloud(ObjectFactory objectFactory, ProviderFactory providerFactory, ProjectLayout layout) {
 
 		imageOutputFile = objectFactory.fileProperty()
 		imageOutputFile.convention(layout.buildDirectory.file('skillcloud/skillcloud.png'))

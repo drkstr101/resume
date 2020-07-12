@@ -1,10 +1,6 @@
 /**
  * @author Aaron R Miller
  */
-import static drkstr101.resume.plugin.model.AccomplishmentType.*
-import static drkstr101.resume.plugin.model.EmploymentType.*
-import drkstr101.resume.plugin.SkillCloud
-import drkstr101.resume.plugin.ResumeModelProvider
 
 plugins {
 	id 'eclipse'

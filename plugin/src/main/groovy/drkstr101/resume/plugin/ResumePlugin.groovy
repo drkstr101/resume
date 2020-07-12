@@ -21,7 +21,8 @@ public class ResumePlugin implements Plugin<Project> {
 		final ResumeExtension resume = project.extensions.create('resume', ResumeExtension)
 
 		// Register task to generate Skill Cloud image
-		final SkillCloud skillCloud = project.tasks.create('skillCloud', SkillCloud)
+		final RenderSkillCloud skillCloud = project.tasks.create('skillCloud', RenderSkillCloud)
+		skillCloud.group = "Build"
 		skillCloud.modelProvider = new ResumeModelProvider(resume)
 
 		final Task build = project.tasks.getByName('build')
