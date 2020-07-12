@@ -3,7 +3,6 @@
  */
 package drkstr101.resume.plugin.skillcloud
 
-import java.awt.Color
 import java.awt.Dimension
 
 import javax.inject.Inject
@@ -20,12 +19,8 @@ import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 
-import com.kennycason.kumo.CollisionMode
 import com.kennycason.kumo.WordCloud
 import com.kennycason.kumo.WordFrequency
-import com.kennycason.kumo.bg.RectangleBackground
-import com.kennycason.kumo.font.scale.LinearFontScalar
-import com.kennycason.kumo.palette.ColorPalette
 
 import drkstr101.resume.plugin.calculator.SkillPointCalculator
 import drkstr101.resume.plugin.model.Resume
@@ -49,9 +44,9 @@ class RenderSkillCloud extends DefaultTask {
 	}
 
 
-	static final DEFAULT_IMAGE_WIDTH = 640
+	static final DEFAULT_IMAGE_WIDTH = 400
 
-	static final DEFAULT_IMAGE_HEIGHT = 480
+	static final DEFAULT_IMAGE_HEIGHT = 300
 
 	@Input final Property<Integer> imageWidth
 
@@ -94,22 +89,10 @@ class RenderSkillCloud extends DefaultTask {
 
 	@TaskAction
 	void run() {
-		// println "Generating skill cloud..."
-
-		def skillPoints = this.skillPoints.get()
-		def wordFrequencies = toWordFrequencies(modelProvider.get(), skillPoints)
-		def dimension = new Dimension(imageWidth.get(), imageHeight.get())
-
-		def wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE)
-		wordCloud.padding = 0
-		wordCloud.background = new RectangleBackground(dimension)
-		wordCloud.colorPalette = new ColorPalette(Color.RED, Color.GREEN, Color.YELLOW, Color.BLUE)
-		wordCloud.fontScalar = new LinearFontScalar(10, 40)
-		wordCloud.build(wordFrequencies)
-
-		// println "---- USING WORD FREQUENCIES ----"
-		// wordFrequencies.each { println it }
-		//wordFrequencies.each { "${it.frequency}: ${it.word}" }
+		final Map<String, BigInteger> skillPoints = this.skillPoints.get()
+		final List<WordFrequency> wordFrequencies = toWordFrequencies(modelProvider.get(), skillPoints)
+		final Dimension dimension = new Dimension(imageWidth.get(), imageHeight.get())
+		final WordCloud wordCloud = WordCloudFactory.create(wordFrequencies, dimension)
 
 		textOutputFile.get().asFile.withWriter { Writer writer ->
 			wordFrequencies.each { writer.write("${it.frequency}: ${it.word}\n") }

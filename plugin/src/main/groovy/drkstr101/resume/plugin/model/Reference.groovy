@@ -1,7 +1,5 @@
 package drkstr101.resume.plugin.model
 
-import org.gradle.api.tasks.Input
-
 import groovy.transform.Canonical
 
 /**
