@@ -19,11 +19,8 @@ public class ResumePluginTest extends Specification {
         project.plugins.apply("drkstr101.resume")
 		
 		then:
-        def resume = project.extensions.findByName("resume")
-//		def skillCloud = project.tasks.findByName("skillCloud")
-
-        resume != null
-//        skillCloud != null
-//		skillCloud.resume.get() == resume
+        assert project.extensions.findByName("resume") != null
+		assert project.tasks.findByName("skillCloud") != null
+		assert project.tasks.findByName("markdown") != null
     }
 }

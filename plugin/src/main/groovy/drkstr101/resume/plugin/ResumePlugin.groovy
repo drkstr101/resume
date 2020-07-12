@@ -8,6 +8,7 @@ import org.gradle.api.Project
 import org.gradle.api.Task
 import org.gradle.api.plugins.BasePlugin
 
+import drkstr101.resume.plugin.markdown.RenderMarkdown
 import drkstr101.resume.plugin.skillcloud.RenderSkillCloud
 
 /**
@@ -21,6 +22,11 @@ public class ResumePlugin implements Plugin<Project> {
 		// Ensure life-cycle tasks are available
 		project.pluginManager.apply(BasePlugin)
 		final ResumeExtension resume = project.extensions.create('resume', ResumeExtension)
+		
+		// Register task to render markdown content
+		final RenderMarkdown markdown = project.tasks.create('markdown', RenderMarkdown)
+		markdown.group = "Build"
+		markdown.resume = resume
 
 		// Register task to generate Skill Cloud image
 		final RenderSkillCloud skillCloud = project.tasks.create('skillCloud', RenderSkillCloud)
@@ -28,6 +34,6 @@ public class ResumePlugin implements Plugin<Project> {
 		skillCloud.modelProvider = new ResumeModelProvider(resume)
 
 		final Task build = project.tasks.getByName('build')
-		build.dependsOn(skillCloud)
+		build.dependsOn(markdown, skillCloud)
 	}
 }
