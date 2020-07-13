@@ -16,8 +16,8 @@ public class WordCloudFactory {
 		wordCloud.padding = 1
 		wordCloud.background = new RectangleBackground(dimension)
 		wordCloud.backgroundColor = EquidistantColorPalette.BG_COLOR
-		wordCloud.colorPalette = new ColorPalette(EquidistantColorPalette.getColors(3))
-		wordCloud.fontScalar = new LinearFontScalar(8, 32)
+		wordCloud.colorPalette = new ColorPalette(EquidistantColorPalette.getColors(8))
+		wordCloud.fontScalar = new LinearFontScalar(16, 72)
 		wordCloud.build(wordFrequencies)
 		
 		return wordCloud

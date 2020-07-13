@@ -45,9 +45,9 @@ class RenderSkillCloud extends DefaultTask {
 	}
 
 
-	static final DEFAULT_IMAGE_WIDTH = 400
+	static final DEFAULT_IMAGE_WIDTH = 800
 
-	static final DEFAULT_IMAGE_HEIGHT = 300
+	static final DEFAULT_IMAGE_HEIGHT = 600
 
 	@Input final Property<Integer> imageWidth
 
