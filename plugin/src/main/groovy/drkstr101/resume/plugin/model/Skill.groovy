@@ -17,4 +17,9 @@ class Skill {
 	String label
 	Skill parent
 	Collection<Skill> children = []	
+	
+	Skill rootNode() {
+		if(!parent) return this
+		return parent.rootNode()
+	}
 }

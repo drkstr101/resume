@@ -9,4 +9,5 @@
 
 rootProject.name = 'resume'
 
+includeBuild 'kumo'
 includeBuild 'plugin'
