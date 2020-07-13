@@ -5,6 +5,7 @@ package drkstr101.resume.plugin.calculator
 
 import static drkstr101.resume.plugin.calculator.CalculatorUtil.*
 
+
 import drkstr101.resume.plugin.model.Accomplishment
 import drkstr101.resume.plugin.model.Resume
 import drkstr101.resume.plugin.model.Skill
@@ -15,11 +16,9 @@ import drkstr101.resume.plugin.model.Skill
  */
 class SkillPointCalculator {
 	
-	static final int SCALE = 10
+	private final SkillPoints _skillPoints = [:]
 
-	private final Map<String, Integer> _skillPoints = [:]
-
-	public Map<String, Integer> getSkillPoints() {
+	public SkillPoints getSkillPoints() {
 		return _skillPoints
 	}
 
@@ -50,9 +49,9 @@ class SkillPointCalculator {
 	SkillPointCalculator calculate() {
 		// println "Calculating skill points..."
 
-		//initialize each skill with a base value of SCALE
-		Map<String, Integer> baseSkillPoints = _resume.skillsByName.collectEntries { key, val ->
-			[key, SCALE]
+		//initialize each skill with a base value of 1 point
+		SkillPoints baseSkillPoints = _resume.skillsByName.collectEntries { key, val ->
+			[key, SkillPoints.one()]
 		}
 
 		_totalSkillPoints = baseSkillPoints.values().sum()
@@ -61,14 +60,21 @@ class SkillPointCalculator {
 		// println baseSkillPoints
 
 		_resume.accomplishments.each { Accomplishment accomplishment ->
-			// add SCALE to skill points every time it is referenced in an accomplishment
-			Map<String, Integer> addedSkillPoints = accomplishment.skills.collectEntries { Skill skill ->
-				[skill.name, SCALE]
+			SkillPoints addedSkillPoints = accomplishment.skills.inject([:]) { Map memo, Skill skill ->
+				// add one point every time a skill is referenced in an accomplishment
+				memo.put(skill.name, SkillPoints.one())
+
+				// add a half  point to each of its parents
+				memo.putAll addSkillPoints(memo as SkillPoints, collectParents(skill).collectEntries({ 
+					[it.name, SkillPoints.half()] 
+				}) as SkillPoints)
+				
+				return memo
 			}
 
 			if(!addedSkillPoints.isEmpty()) {
-				// println("---- APPENDING SKILL POINTS ----")
-				// println addedSkillPoints
+				 // println("---- APPENDING SKILL POINTS ----")
+				 // println addedSkillPoints
 				
 				_totalSkillPoints += addedSkillPoints.values().sum()
 
@@ -76,8 +82,8 @@ class SkillPointCalculator {
 			}
 		}
 
-		// println "---- ENDING SKILL POINTS ----"
-		// println baseSkillPoints
+		 // println "---- ENDING SKILL POINTS ----"
+		 // println baseSkillPoints
 
 		_skillPoints.putAll(baseSkillPoints)
 

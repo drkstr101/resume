@@ -23,6 +23,7 @@ import com.kennycason.kumo.WordCloud
 import com.kennycason.kumo.WordFrequency
 
 import drkstr101.resume.plugin.calculator.SkillPointCalculator
+import drkstr101.resume.plugin.calculator.SkillPoints
 import drkstr101.resume.plugin.model.Resume
 import drkstr101.resume.plugin.model.Skill
 
@@ -52,7 +53,7 @@ class RenderSkillCloud extends DefaultTask {
 
 	@Input final Property<Integer> imageHeight
 
-	@Input final Provider<Map<String, Integer>> skillPoints
+	@Input final Provider<SkillPoints> skillPoints
 
 	@OutputFile final RegularFileProperty imageOutputFile
 
