@@ -21,6 +21,7 @@ import org.gradle.api.tasks.TaskAction
 
 import com.kennycason.kumo.WordCloud
 import com.kennycason.kumo.WordFrequency
+import com.kennycason.kumo.palette.ColorPalette
 
 import drkstr101.resume.plugin.calculator.SkillPointCalculator
 import drkstr101.resume.plugin.calculator.SkillPoints
@@ -37,11 +38,20 @@ class RenderSkillCloud extends DefaultTask {
 		return skill.label? skill.label :
 				skill.name.split('_').collect({ it.capitalize() }).join(" ")
 	}
+	
+	static List<String> collectCategories(Map<String, Skill> skillsByName) {
+		return skillsByName.values()
+				.stream()
+				.filter({ Skill skill -> skill.parent == null })
+				.collect { Skill skill -> skill.name }
+	}
 
-	static List<WordFrequency> toWordFrequencies(Resume resume, Map<String, Integer> skillPoints) {
+	static List<WordFrequency> toWordFrequencies(Resume resume, Map<String, Integer> skillPoints, List<String> categories) {
 		return skillPoints.collect([], { key, val ->
-			new WordFrequency(displayNameFor(resume.skillsByName.get(key)), val)
-		}).sort({ it.frequency }).reverse()
+			def skill = resume.skillsByName.get(key)
+			def index = categories.indexOf(skill.rootNode().name)
+			return new WordFrequency(displayNameFor(skill), val, index)
+		}).sort({ WordFrequency val -> val.frequency }).reverse()
 	}
 
 
@@ -90,10 +100,15 @@ class RenderSkillCloud extends DefaultTask {
 
 	@TaskAction
 	void run() {
+		final Resume resume = modelProvider.get()
 		final Map<String, BigInteger> skillPoints = this.skillPoints.get()
-		final List<WordFrequency> wordFrequencies = toWordFrequencies(modelProvider.get(), skillPoints)
+		final List<String> categories = collectCategories(resume.skillsByName)
+		final List<WordFrequency> wordFrequencies = toWordFrequencies(resume, skillPoints, categories)
+		
+		wordFrequencies.each { println it }
 		final Dimension dimension = new Dimension(imageWidth.get(), imageHeight.get())
-		final WordCloud wordCloud = WordCloudFactory.create(wordFrequencies, dimension)
+		final ColorPalette colorPalette = new ColorPalette(EquidistantColorPalette.getColors(categories.size()))
+		final WordCloud wordCloud = WordCloudFactory.create(wordFrequencies, dimension, colorPalette)
 
 		textOutputFile.get().asFile.withWriter { Writer writer ->
 			wordFrequencies.each { writer.write("${it.frequency}: ${it.word}\n") }

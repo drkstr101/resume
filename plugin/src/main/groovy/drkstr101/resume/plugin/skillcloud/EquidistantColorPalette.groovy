@@ -10,9 +10,9 @@ import java.awt.Color
  *
  */
 class EquidistantColorPalette {
-	
+
 	static final Color BG_COLOR = new Color(0xFFFFFF)
-	
+
 	static final COLORS = [
 		new Color(0x003f5c),
 		new Color(0x2f4b7c),
@@ -26,6 +26,9 @@ class EquidistantColorPalette {
 
 	static Color[] getColors(int length = 8) {
 		if(length > 8) throw new RuntimeException("Cannot select more than 8 colors")
-		return COLORS.take(length)
+		if(length == 1) return COLORS.take(1)
+
+		def range = (0..7).step((8 / length) as int)
+		return COLORS[range]
 	}
 }

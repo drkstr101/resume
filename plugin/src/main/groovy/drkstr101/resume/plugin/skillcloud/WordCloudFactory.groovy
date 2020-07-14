@@ -11,12 +11,12 @@ import com.kennycason.kumo.palette.ColorPalette
 
 public class WordCloudFactory {
 
-	static WordCloud create(final List<WordFrequency> wordFrequencies, final Dimension dimension) {
+	static WordCloud create(final List<WordFrequency> wordFrequencies, final Dimension dimension, final ColorPalette colorPalette) {
 		final WordCloud wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE)
 		wordCloud.padding = 1
 		wordCloud.background = new RectangleBackground(dimension)
 		wordCloud.backgroundColor = EquidistantColorPalette.BG_COLOR
-		wordCloud.colorPalette = new ColorPalette(EquidistantColorPalette.getColors(8))
+		wordCloud.colorPalette = colorPalette
 		wordCloud.fontScalar = new LinearFontScalar(16, 72)
 		wordCloud.build(wordFrequencies)
 		
