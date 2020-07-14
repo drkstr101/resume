@@ -9,8 +9,8 @@ plugins {
 	id 'drkstr101.resume'
 }
 
-group = 'drkstr101'
-version = '1.0.0-rc1'
+group = 'drkstr101.resume'
+version = '1.0.0-SNAPSHOT'
 
 
 resume {
@@ -22,3 +22,13 @@ apply from: file('data/skills.groovy')
 apply from: file('data/references.groovy')
 apply from: file('data/accomplishments.groovy')
 apply from: file('data/employers.groovy')
+
+
+task publishPlugin {
+	dependsOn gradle.includedBuild('plugin').task(':publish')
+}
+
+task publish {
+	group = "Publishing"
+	dependsOn publishPlugin
+}
