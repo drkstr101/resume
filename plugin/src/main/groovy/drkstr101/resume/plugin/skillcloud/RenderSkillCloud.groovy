@@ -81,7 +81,7 @@ class RenderSkillCloud extends DefaultTask {
 		imageOutputFile.convention(layout.buildDirectory.file('skillcloud/skillcloud.png'))
 
 		textOutputFile = objectFactory.fileProperty()
-		textOutputFile.convention(layout.buildDirectory.file('skillcloud/skillcloud.txt'))
+		textOutputFile.convention(layout.buildDirectory.file('skillcloud/skills.txt'))
 
 		imageWidth = objectFactory.property(Integer)
 		imageWidth.convention(DEFAULT_IMAGE_WIDTH)
@@ -105,7 +105,6 @@ class RenderSkillCloud extends DefaultTask {
 		final List<String> categories = collectCategories(resume.skillsByName)
 		final List<WordFrequency> wordFrequencies = toWordFrequencies(resume, skillPoints, categories)
 		
-		wordFrequencies.each { println it }
 		final Dimension dimension = new Dimension(imageWidth.get(), imageHeight.get())
 		final ColorPalette colorPalette = new ColorPalette(EquidistantColorPalette.getColors(categories.size()))
 		final WordCloud wordCloud = WordCloudFactory.create(wordFrequencies, dimension, colorPalette)
