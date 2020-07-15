@@ -15,7 +15,7 @@ plugins {
 }
 
 group = 'drkstr101.resume'
-version = '1.0.0-SNAPSHOT'
+version = '1.0.0-rc1'
 
 repositories {
 	// Use jcenter for resolving dependencies.
@@ -26,7 +26,7 @@ repositories {
 dependencies {
 	implementation gradleApi(),
 			'org.codehaus.groovy:groovy-all:2.5.7',
-			'com.kennycason:kumo-core:1.28-SNAPSHOT',
+			'drkstr101.resume:kumo-core:1.28.0',
 			'com.vladsch.flexmark:flexmark:0.62.2',
 			'com.vladsch.flexmark:flexmark-ext-tables:0.62.2',
 			'com.vladsch.flexmark:flexmark-ext-definition:0.62.2',
