@@ -87,7 +87,7 @@ class RenderSkillCloud extends DefaultTask {
 		imageWidth.convention(DEFAULT_IMAGE_WIDTH)
 
 		imageHeight = objectFactory.property(Integer)
-		imageHeight.convention(DEFAULT_IMAGE_WIDTH)
+		imageHeight.convention(DEFAULT_IMAGE_HEIGHT)
 
 		skillPoints = providerFactory.provider {
 			if(_calculator == null) {

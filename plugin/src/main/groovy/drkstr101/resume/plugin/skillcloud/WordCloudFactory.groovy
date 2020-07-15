@@ -13,11 +13,11 @@ public class WordCloudFactory {
 
 	static WordCloud create(final List<WordFrequency> wordFrequencies, final Dimension dimension, final ColorPalette colorPalette) {
 		final WordCloud wordCloud = new WordCloud(dimension, CollisionMode.RECTANGLE)
-		wordCloud.padding = 1
+		wordCloud.padding = 2
 		wordCloud.background = new RectangleBackground(dimension)
 		wordCloud.backgroundColor = EquidistantColorPalette.BG_COLOR
 		wordCloud.colorPalette = colorPalette
-		wordCloud.fontScalar = new LinearFontScalar(16, 72)
+		wordCloud.fontScalar = new LinearFontScalar(12, 72)
 		wordCloud.build(wordFrequencies)
 		
 		return wordCloud
