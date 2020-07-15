@@ -1,0 +1,61 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "drkstr101.resume",
+    "module": "kumo-api",
+    "version": "1.28.0",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5.1",
+      "buildId": "2gieqqhzmzfjrchi4s7paxqp34"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "kumo-api-1.28.0.jar",
+          "url": "kumo-api-1.28.0.jar",
+          "size": 1209,
+          "sha512": "fa9da1749c6cac23dd096f88131907f7b850d93d76250f8f09adb1cebab1492772c31a706c98f29e03cc67b51d2fb778782660578d5c9c4445d07465f07c770b",
+          "sha256": "3109b3a7abb1b42db040e423b6e333ccffebfe2385269fd1cabdea4deb3a8c82",
+          "sha1": "4d3ed726a8270a90aea1b87199fbaec454e6788a",
+          "md5": "c8807c835b36fc422f514eb396d66977"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "kumo-api-1.28.0.jar",
+          "url": "kumo-api-1.28.0.jar",
+          "size": 1209,
+          "sha512": "fa9da1749c6cac23dd096f88131907f7b850d93d76250f8f09adb1cebab1492772c31a706c98f29e03cc67b51d2fb778782660578d5c9c4445d07465f07c770b",
+          "sha256": "3109b3a7abb1b42db040e423b6e333ccffebfe2385269fd1cabdea4deb3a8c82",
+          "sha1": "4d3ed726a8270a90aea1b87199fbaec454e6788a",
+          "md5": "c8807c835b36fc422f514eb396d66977"
+        }
+      ]
+    }
+  ]
+}

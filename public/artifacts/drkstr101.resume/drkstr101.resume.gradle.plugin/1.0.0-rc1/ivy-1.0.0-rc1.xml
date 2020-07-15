@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+  <info module="drkstr101.resume.gradle.plugin" organisation="drkstr101.resume" publication="20200715135720" revision="1.0.0-rc1" status="integration">
+    <description/>
+  </info>
+  <configurations/>
+  <publications/>
+  <dependencies>
+    <dependency name="plugin" org="drkstr101.resume" rev="1.0.0-rc1"/>
+  </dependencies>
+</ivy-module>

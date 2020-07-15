@@ -1,0 +1,126 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "drkstr101.resume",
+    "module": "kumo-core",
+    "version": "1.28.0",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5.1",
+      "buildId": "2gieqqhzmzfjrchi4s7paxqp34"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "kumo-core-1.28.0.jar",
+          "url": "kumo-core-1.28.0.jar",
+          "size": 67599,
+          "sha512": "e8140574be0073eaeb7de7ce3eba1131ac093c8656e543609562e38f2f76bd7c3c594fd25766d06c8761d7404a443f5b7c2690230d83f7a9a45b2573d93030c2",
+          "sha256": "9aea2fe65d6b8fbf1e3674bfd86359ec50a42040cd1f2bef07f78ddd17d376c4",
+          "sha1": "4a53a7f86baa3a5b07553cf1dffbf243ffb6eaa4",
+          "md5": "c3cbcca0d1beca49318f3af194755732"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "drkstr101.resume",
+          "module": "kumo-api",
+          "version": {
+            "requires": "1.28.0"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.2.3"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-to-slf4j",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "jul-to-slf4j",
+          "version": {
+            "requires": "1.7.30"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "log4j-over-slf4j",
+          "version": {
+            "requires": "1.7.30"
+          }
+        },
+        {
+          "group": "org.jsoup",
+          "module": "jsoup",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.4"
+          }
+        },
+        {
+          "group": "com.github.davidmoten",
+          "module": "rtree",
+          "version": {
+            "requires": "0.8.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kumo-core-1.28.0.jar",
+          "url": "kumo-core-1.28.0.jar",
+          "size": 67599,
+          "sha512": "e8140574be0073eaeb7de7ce3eba1131ac093c8656e543609562e38f2f76bd7c3c594fd25766d06c8761d7404a443f5b7c2690230d83f7a9a45b2573d93030c2",
+          "sha256": "9aea2fe65d6b8fbf1e3674bfd86359ec50a42040cd1f2bef07f78ddd17d376c4",
+          "sha1": "4a53a7f86baa3a5b07553cf1dffbf243ffb6eaa4",
+          "md5": "c3cbcca0d1beca49318f3af194755732"
+        }
+      ]
+    }
+  ]
+}

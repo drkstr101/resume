@@ -1,0 +1,112 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "drkstr101.resume",
+    "module": "kumo-tokenizers",
+    "version": "1.28.0",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5.1",
+      "buildId": "2gieqqhzmzfjrchi4s7paxqp34"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "kumo-tokenizers-1.28.0.jar",
+          "url": "kumo-tokenizers-1.28.0.jar",
+          "size": 3395,
+          "sha512": "4fd9c16e5f2342e7670802f2196932a9dc11f3b92e9be1a91015e6fa94a62371822131e067b2a511f603ec93beecabe845d3de440677b6323ddf9c18f0f29c34",
+          "sha256": "bc4c8da0f546cc5943a60509b31d7e2c72eaa20556f583fc996794c2be73f06e",
+          "sha1": "e411936f01c84ac2dbc4208c5b9b731045bc798b",
+          "md5": "eadbece191b0b9eee39782f11c93212b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "drkstr101.resume",
+          "module": "kumo-api",
+          "version": {
+            "requires": "1.28.0"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.2.3"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-to-slf4j",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "jul-to-slf4j",
+          "version": {
+            "requires": "1.7.30"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "log4j-over-slf4j",
+          "version": {
+            "requires": "1.7.30"
+          }
+        },
+        {
+          "group": "org.languagetool",
+          "module": "language-en",
+          "version": {
+            "requires": "2.5"
+          }
+        },
+        {
+          "group": "org.languagetool",
+          "module": "language-zh",
+          "version": {
+            "requires": "2.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kumo-tokenizers-1.28.0.jar",
+          "url": "kumo-tokenizers-1.28.0.jar",
+          "size": 3395,
+          "sha512": "4fd9c16e5f2342e7670802f2196932a9dc11f3b92e9be1a91015e6fa94a62371822131e067b2a511f603ec93beecabe845d3de440677b6323ddf9c18f0f29c34",
+          "sha256": "bc4c8da0f546cc5943a60509b31d7e2c72eaa20556f583fc996794c2be73f06e",
+          "sha1": "e411936f01c84ac2dbc4208c5b9b731045bc798b",
+          "md5": "eadbece191b0b9eee39782f11c93212b"
+        }
+      ]
+    }
+  ]
+}

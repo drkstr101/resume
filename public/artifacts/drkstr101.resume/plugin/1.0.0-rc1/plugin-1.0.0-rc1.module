@@ -1,0 +1,105 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "drkstr101.resume",
+    "module": "plugin",
+    "version": "1.0.0-rc1",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5.1",
+      "buildId": "2gieqqhzmzfjrchi4s7paxqp34"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "plugin-1.0.0-rc1.jar",
+          "url": "plugin-1.0.0-rc1.jar",
+          "size": 120271,
+          "sha512": "35d3bec61e7c7d06b44f83db0de754ebdbfe0400cf86b83cdfe1052f1bd77a14488d57502aed809cfe62904738e79df150e1d9615011749e83e5fc04d0deef01",
+          "sha256": "810057f06bc670fd0a3dc41df8c22be030ecd954978a2f584136eb6589fb8a9b",
+          "sha1": "89a97c6e02cea49408eaa13e66a0196baa94b327",
+          "md5": "01d753ca9920c4e2787de6b95d355d53"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy-all",
+          "version": {
+            "requires": "2.5.7"
+          }
+        },
+        {
+          "group": "drkstr101.resume",
+          "module": "kumo-core",
+          "version": {
+            "requires": "1.28.0"
+          }
+        },
+        {
+          "group": "com.vladsch.flexmark",
+          "module": "flexmark",
+          "version": {
+            "requires": "0.62.2"
+          }
+        },
+        {
+          "group": "com.vladsch.flexmark",
+          "module": "flexmark-ext-tables",
+          "version": {
+            "requires": "0.62.2"
+          }
+        },
+        {
+          "group": "com.vladsch.flexmark",
+          "module": "flexmark-ext-definition",
+          "version": {
+            "requires": "0.62.2"
+          }
+        },
+        {
+          "group": "com.vladsch.flexmark",
+          "module": "flexmark-ext-gfm-strikethrough",
+          "version": {
+            "requires": "0.62.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-1.0.0-rc1.jar",
+          "url": "plugin-1.0.0-rc1.jar",
+          "size": 120271,
+          "sha512": "35d3bec61e7c7d06b44f83db0de754ebdbfe0400cf86b83cdfe1052f1bd77a14488d57502aed809cfe62904738e79df150e1d9615011749e83e5fc04d0deef01",
+          "sha256": "810057f06bc670fd0a3dc41df8c22be030ecd954978a2f584136eb6589fb8a9b",
+          "sha1": "89a97c6e02cea49408eaa13e66a0196baa94b327",
+          "md5": "01d753ca9920c4e2787de6b95d355d53"
+        }
+      ]
+    }
+  ]
+}
