@@ -9,41 +9,14 @@ resume {
 				finance
 				maths { label = "Mathematics" }
 				communication
-				compsci
+				compsci { label = "CompSci" }
 				sys_admin { label = "Administrator" }
 				sales
+				mentor
 			}
 		}
 		programming {
 			children {
-				web {
-					label = "Web Applications"
-					children {
-						htm5 { label = "HTML5" }
-						pwa { label = "Progressive Web Apps" }
-						closure_compiler
-						jquery_mobile { label = "jQuery Mobile" }
-						bootstrap
-						createjs
-						nodejs {
-							children {
-								react
-								redux
-								sagasjs
-								flow
-								expressjs
-								typescript
-								loopback_4
-							}
-						}
-					}
-				}
-				flash {
-					children {
-						flex { label = "Apache Flex" }
-						as3 { label = "Actionscript 3" }
-					}
-				}
 				php
 				jdk {
 					label = "Java JDK"
@@ -51,26 +24,21 @@ resume {
 						groovy
 						kotlin
 						xtend
+						spring
 					}
 				}
 				python
-				cpp
-				cs
-				rust
-				mobile {
-					label = "Mobile Applications"
+				cpp { 
+					label = "C/C++"
 					children {
-						air { label = "Adobe AIR" }
-						unreal_engine
-						gvr { label = "GVR/Oculus" }
 						android_ndk { label = "Android NDK" }
+						unreal_engine
 					}
 				}
-				ecommerce {
-					label = "eCommerce"
-					children { magento }
-				}
+				cs { label = "C#/.NET" }
+				rust
 				test {
+					label = "Testing"
 					children {
 						serenity_bdd { label = "Serenity BDD" }
 						cucumber
@@ -78,18 +46,56 @@ resume {
 						jbehave { label = "JBehave" }
 					}
 				}
+				nodejs {
+					children {
+						react
+						redux
+						sagasjs
+						flow
+						expressjs
+						typescript
+						loopback_4
+					}
+				}
+				closure_compiler
+				jquery_mobile { label = "jQuery Mobile" }
+				bootstrap
+				createjs
+				flash {
+					children {
+						flex { label = "Apache Flex" }
+						as3 { label = "Actionscript 3" }
+					}
+				}
 			}
 		}
 		ux {
-			label = "UI/UX"
+			label = "UI/UX Design"
 			children {
 				dataviz { label = "Data Visualization" }
 				html5 { label = "HTML5/CSS3" }
+				mobile {
+					label = "Mobile Applications"
+					children {
+						air { label = "Adobe AIR" }
+						gvr { label = "GVR/Oculus" }
+						android
+						ios { label = "iOS" }
+					}
+				}
+				web {
+					label = "Web Applications"
+					children {
+						htm5 { label = "HTML5" }
+						pwa { label = "Progressive Web Apps" }
+					}
+				}
 			}
 		}
 		systems {
 			children {
 				database {
+					label = "Databases"
 					children {
 						mysql { label = "MySQL/Maria" }
 						postgres { label = "Postgresql" }
@@ -103,29 +109,33 @@ resume {
 						soap { label = "SOAP" }
 						scorm { label = "SCORM" }
 						oauth2 { label = "OAuth 2" }
-						vault
 						servicenow { label = "ServiceNow" }
 						google_sheets
 						emf { label = "EMF/ECore" }
 					}
 				}
-			}
-		}
-		devops {
-			label = "DevOps"
-			children {
-				jenkins
-				apache_ant
-				gradle
-				aws { label = "Amazon Web Services" }
-				gcs { label = "Google Cloud Services" }
-				kubernetes
-				stackstorm
-				terraform
-				microservices
-				tomcat
-				linux
-				windows
+				devops {
+					label = "DevOps"
+					children {
+						jenkins
+						apache_ant
+						gradle_plugin { label = "Gradle" }
+						aws { label = "Amazon Web Services" }
+						gcs { label = "Google Cloud Services" }
+						kubernetes
+						stackstorm
+						terraform
+						vault
+						microservices
+						tomcat
+						linux
+						windows
+					}
+				}
+				ecommerce {
+					label = "eCommerce"
+					children { magento }
+				}
 			}
 		}
 	}

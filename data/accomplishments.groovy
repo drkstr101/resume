@@ -118,6 +118,7 @@ resume {
                 Read blueprints and directed volunteer work crew to construct wooden playground equipment,
                 suggested by my teacher/mentor as extra credit in Advanced Engineering & Design class
             '''.stripIndent()
+			skills = ['leadership']
 		}
 
 		obi_org {
@@ -220,6 +221,7 @@ resume {
 				- Implemented mobile compatible front-end architecture to bring a flagship product to the App/Play Store
 				- Maintained existing flagship product that delivers and tracks the usage of rich media content for Computer-Aided Learning ("eLearning")
 			'''.stripIndent()
+			skills = ['ux', 'flex', 'as3', 'air', 'scorm', 'python', 'apache_ant', 'scorm', 'android', 'ios']
 		}
 		vivid_sr_programmer {
 			type = 'Professional'
@@ -231,6 +233,32 @@ resume {
 				- Designed and developed front end framework to enable the production of Computer Aided Learning content as a fully Progressive Web App, eliminating the reliance on Flash/Air runtimes in flagship product
 				- Created prototype data service-oriented back-end architecture that supports user authentication and tracking for deployment scenarios outside a traditional LMS web portal, later adopted by another team as the basis for a rewrite to the backend LMS product
 			'''.stripIndent()
+			skills = [
+				'as3',
+				'mobile',
+				'cpp',
+				'jdk',
+				'android_ndk',
+				'gvr',
+				'apache_ant',
+				'ios',
+				'sys_admin',
+				'groovy',
+				'gradle_plugin',
+				'jenkins',
+				'microservices',
+				'linux',
+				'windows',
+				'cs',
+				'pwa',
+				'html5',
+				'msql',
+				'nodejs',
+				'test',
+				'mocha',
+				'mentor',
+				'createjs'
+			]
 		}
 		catalyte_surge {
 			type = 'Professional'
@@ -240,6 +268,23 @@ resume {
 				- Removed primary blockers and reduced runtime memory footprint by an order of magnitude in an Electronic Medical Record (EMR) web application
 				- Developed client-side module and built a release system for custom 2FA authentication, when using the AWS Command Line Interface within Emory University's internal network 
 			'''.stripIndent()
+			skills = [
+				'microservices', 
+				'rest',
+				'nodejs',
+				'html5',
+				'expressjs',
+				'react',
+				'redux',
+				'sagasjs',
+				'typescript',
+				'aws',
+				'soap',
+				'gradle_plugin',
+				'jdk',
+				'groovy',
+				'domain_modeling'
+			]
 		}
 		expedia_group {
 			type = 'Professional'
@@ -249,6 +294,20 @@ resume {
 				- Reduced maintenance cost by aiding in the transition of a legacy monolith project to a more modern automation framework
 				- Improved the efficiency of Stackstorm pack development by building and maintaining an automated acceptance testing and specification framework
 			'''.stripIndent()
+			skills = [
+				'devops',
+				'vault',
+				'servicenow',
+				'microservices',
+				'kubernetes',
+				'cs',
+				'python',
+				'gradle_plugin',
+				'stackstorm',
+				'serenity_bdd',
+				'groovy',
+				'aws'
+			]
 		}
 		waweb_org {
 			type = 'Professional'
@@ -261,6 +320,61 @@ resume {
 				- Created an append-only accounting system and tooling using a combination of plain text files, HLedger, and Git
 				- Developed proprietary project estimation and pricing tools using the Eclipse Modeling Framework (EMF), accounted for as IP Assets in the main ledger and providing the primary competitive advantage for the company
 			'''.stripIndent()
+			skills = [
+				'business_analysis',
+				'product_development',
+				'project_management',
+				'domain_modeling',
+				'communication',
+				'sales',
+				'mentor'
+			]
+		}
+		waweb_sys {
+			type = 'Professional'
+			startDate = calendar(2019, 10)
+			endDate = calendar(2020, 06)
+			description = '''
+                - Created an append-only accounting system and tooling using a combination
+				  of plain text files, HLedger, and Git
+                - Developed proprietary project estimation and pricing tools using the
+				  Eclipse Modeling Framework (EMF), accounted for as IP Assets in the main
+				  ledger and providing the primary competitive advantage for the company
+				- Developed a collection of integrated Gradle plugins for static website
+				  development and publication
+				- Developed Augmented Reality (AR) demo with Rust and Android NDK
+				- Developing feterated social media app from scratch as a teaching tool to
+				  help a friend learn to program 
+			'''.stripIndent()
+			skills = [
+				'terraform',
+				'kubernetes',
+				'aws',
+				'gcs',
+				'gradle_plugin',
+				'groovy',
+				'spring',
+				'emf',
+				'html5',
+				'closure_compiler',
+				'bootstrap',
+				'serenity_bdd',
+				'ux',
+				'mobile',
+				'web',
+				'rust',
+				'cpp',
+				'android_ndk',
+				'domain_modeling',
+				'mentor',
+				'react',
+				'redux',
+				'sagasjs',
+				'html5',
+				'rest',
+				'typescript',
+				'loopback_4'
+			]
 		}
 		natural {
 			type = 'Professional'
