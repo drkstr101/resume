@@ -3,6 +3,7 @@
  */
 
 plugins {
+	id 'base'
 	id 'eclipse'
 	id 'idea'
 	id 'project-report'
@@ -11,6 +12,10 @@ plugins {
 
 group = 'drkstr101.resume'
 version = '1.0.0-SNAPSHOT'
+
+ext {
+	distDir = file('public')
+}
 
 
 resume {
@@ -28,7 +33,14 @@ task publishPlugin {
 	dependsOn gradle.includedBuild('plugin').task(':publish')
 }
 
+task publishSkillCloud(type: Copy) {
+	from skillCloud
+	into distDir
+	rename '(.+)\\.(.+)', "${project.group}.\$1-${project.version}.\$2"
+	mustRunAfter skillCloud, clean
+}
+
 task publish {
 	group = "Publishing"
-	dependsOn publishPlugin
+	dependsOn build, publishPlugin, publishSkillCloud
 }
