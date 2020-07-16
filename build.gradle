@@ -34,7 +34,7 @@ apply from: file('data/employers.groovy')
 
 
 task publishPlugin {
-	dependsOn gradle.includedBuild('plugin').task(':publish')
+	dependsOn gradle.includedBuild('gradle-resume').task(':publish')
 }
 
 task publishSkillCloud(type: Copy) {
