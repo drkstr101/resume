@@ -5,7 +5,7 @@
   <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
   <!-- that they should prefer consuming it instead. -->
   <!-- do_not_remove: published-with-gradle-metadata -->
-  <info organisation="drkstr101.resume" module="kumo-api" revision="1.28.0" status="integration" publication="20200716100432"/>
+  <info organisation="drkstr101.resume" module="kumo-api" revision="1.28.0" status="integration" publication="20200716143546"/>
   <configurations>
     <conf name="compile" visibility="public"/>
     <conf name="default" visibility="public" extends="runtime"/>
