@@ -29,53 +29,7 @@
 %% and packages.
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
-% Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
-
-% The paracol package lets you typeset columns of text in parallel
-\usepackage{paracol}
-
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
-\ifxetexorluatex
-  % If using xelatex or lualatex:
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\else
-  % If using pdflatex:
-  \usepackage[rm]{roboto}
-  \usepackage[defaultsans]{lato}
-  % \usepackage{sourcesanspro}
-  \renewcommand{\familydefault}{\sfdefault}
-\fi
-
-% Change the colours if you want to
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
-\colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
-
-% Change some fonts, if necessary
-\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
-\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
-\renewcommand{\cvsubsectionfont}{\large\bfseries}
-
-
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
+\usepackage{preamble}
 
 %% main.bib contains your publications
 \addbibresource{main.bib}
@@ -84,7 +38,7 @@
 \name{Aaron R Miller}
 \tagline{Enterprise Software Developer}
 %% You can add multiple photos on the left or right
-\photoR{2.8cm}{Globe_High}
+\photoR{2.8cm}{drkstr101}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{
@@ -93,10 +47,12 @@
   \phone{509-491-3153}
   \mailaddress{101, S Kellogg st, 99336, USA}
   \location{Kennewick, WA}
-  \homepage{waweb.io}
+  \homepage{www.waweb.io}
   % \twitter{@twitterhandle}
-  % \linkedin{aaron-miller-452244173}
   \github{drkstr101}
+  \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  \gitlab{aaron.miller}
+  \linkedin{aaron-miller-452244173}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{0000-0000-0000-0000}
   %% You can add your own arbtrary detail with
@@ -104,8 +60,6 @@
   % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
   %% Or you can declare your own field with
   %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-  % \gitlab{your_id}
 }
 
 \makecvheader
@@ -119,50 +73,45 @@
 % break across pages if things get too long.
 \begin{paracol}{2}
 
-\cvsection{Carreer at a Glance}
+\cvsection{Clifton Strengths™}
 
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{
 % comma-separated list of value/text width/color/detail}
 \wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
+  6/8em/accent!30/{Ideation},
+  3/8em/accent!40/Learner,
+  8/8em/accent!60/Relator,
+  2/10em/accent!10/Connectedness,
+  5/6em/accent!20/Futuristic
 }
 
-\cvsection{Experience}
+\bigskip
 
-\cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
-\begin{itemize}
-\item Job description 1
-\item Job description 2
-\end{itemize}
+\cvsection{Recent Projects}
 
-\divider
-
-\cvevent{Job Title 2}{Company 2}{Month 20XX -- Ongoing}{Location}
-\begin{itemize}
-\item Job description 1
-\item Job description 2
-\end{itemize}
-
-\cvsection{Projects}
-
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
-\end{itemize}
+\cvevent{Xtext}{Contributer}{May 2020 -- Ongoing}{}
+SDK for developing programming and domain-specific language editors
 
 \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+\cvevent{Natural}{Maintainer}{April 2020 -- Ongoing}{}
+Eclipse plugin editor for Cucumber and JBehave languages
 
-% \medskip
+\divider
 
+\cvevent{Earth New Media}{Owner}{October 2019 -- Ongoing}{}
+Federated social networking platform (Elaboration Phase) 
 
+\divider
+
+\cvevent{CartoonifyIt}{Owner}{September 2019 -- Ongoing}{}
+Demo Augmented Reality (AR) application built with Rust and the Android NDK (Construction Phase) 
+
+\divider
+
+\cvevent{WaWeb Site Plugin}{Owner}{July 2019 -- Ongoing}{}
+Integrated gradle plugins for static site development and publication
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
@@ -170,79 +119,131 @@ A short abstract would also work.
 
 \cvsection{Accomplishments}
 
+% \cvsection{Projects}
+% 
+\cvevent{Project 1}{Funding agency/institution}{}{}
+\begin{itemize}
+\item Details
+\end{itemize}
+
+\divider
+
+\cvevent{Project 2}{Funding agency/institution}{April 2020 -- Ongoing}{}
+A short abstract would also work.
+
+
+\bigskip
+
+\cvsection{Work History}
+
+\cvevent{Eclipse Xtext}{Company 1}{April 2020 -- Ongoing}{Remote}
+\begin{itemize}
+\item Job description 1
+\item Job description 2
+\end{itemize}
+
+\divider
+
+\cvevent{Natural}{Company 2}{Month 20XX -- Ongoing}{Location}
+\begin{itemize}
+\item Job description 1
+\item Job description 2
+\end{itemize}
+
 \nocite{*}
 
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{My Life Philosophy}
 
 \begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
+``Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.''
+— Albert Einstein
 \end{quote}
 
-\cvsection{Most Proud of}
+\medskip
 
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
+% \cvsection{Most Proud of}
+% 
+% \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
+% 
+% \divider
+% 
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+% 
+% \divider
+% 
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
 
-\divider
+\cvsection{Top Skills}
 
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+\cvtag{Programming}
+\cvtag{Leadership}
+\cvtag{Systems}
+\cvtag{Communication}
+\cvtag{DevOps}
+\cvtag{UI/UX Design}
 
-\divider
+\begin{minipage}{7.1cm}
+	\includegraphics[width=\linewidth]{skillcloud.png}
+\end{minipage}%
 
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+\medskip
 
-\cvsection{Strengths}
+% \divider\smallskip
 
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
+% 
+% \cvtag{C++}
+% \cvtag{Embedded Systems}\\
+% \cvtag{Statistical Analysis}
 
 \cvsection{Languages}
 
-\cvskill{English}{5}
+\cvskill{Java/JDK}{5}
 \divider
 
-\cvskill{Spanish}{4}
+\cvskill{Groovy}{5}
 \divider
 
-\cvskill{German}{3}
-
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vpsace etc to make ajustments.
-\medskip
-
-\cvsection{Education}
-
-\cvevent{Ph.D.\ in Your Discipline}{Your University}{Sept 2002 -- June 2006}{}
-Thesis title: Wonderful Research
-
+\cvskill{JavaScript}{5}
 \divider
 
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
-
+\cvskill{Typescript}{4}
 \divider
 
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
+\cvskill{Python}{4}
+\divider
+
+\cvskill{C/C++}{3}
+\divider
+
+\cvskill{C\#/.NET}{3}
+\divider
+
+\cvskill{Kotlin}{2}
+\divider
+
+\cvskill{PHP}{2}
+\divider
+
+\cvskill{Rust}{1}
+
+% Yeah I didn't spend too much time making all the
+% spacing consistent... sorry. Use \smallskip, \medskip,
+% \bigskip, \vpsace etc to make ajustments.
+% \medskip
+\newpage
 
 % \divider
 
