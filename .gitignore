@@ -24,3 +24,4 @@ build
 # Ignore Document Lock
 .~lock*
 /.texlipse
+/mai.synctex.gz
