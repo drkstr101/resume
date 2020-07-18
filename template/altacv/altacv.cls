@@ -299,9 +299,7 @@
   {\large\color{emphasis}#1\par}
   \smallskip\normalsize
   \ifstrequal{#2}{}{}{
-  \textbf{
-  	\color{accent}#2}\ifstrequal{#3}{}{}{{\hfill\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}\par
-  }
+  \textbf{\color{accent}#2}\ifstrequal{#3}{}{}{{\hfill\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}\par}
   \ifstrequal{#4}{}{}{\smallskip{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
   \medskip\normalsize
 }
@@ -386,7 +384,6 @@
   \item[\small\normalfont\emailsymbol] #2
   \item[\small\normalfont\mailaddresssymbol] #3
   \end{description}
-%   \medskip
 }
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
