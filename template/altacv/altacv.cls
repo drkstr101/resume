@@ -411,3 +411,31 @@
   \color{body}
   \raggedright
 }
+
+%-------------------------------------------------------------------------------
+%                cover letter design commands definitions
+%-------------------------------------------------------------------------------
+% elements
+\newcommand*{\recipient}[2]{\def\@recipientname{#1}\def\@recipientaddress{#2}}
+\renewcommand*{\date}[1]{\def\@date{#1}}\date{\today}
+\newcommand*{\opening}[1]{\def\@opening{#1}}
+\newcommand*{\closing}[1]{\def\@closing{#1}}
+\newcommand*{\enclosure}[2][]{%
+  % if an optional argument is provided, use it to redefine \enclname
+  \ifthenelse{\equal{#1}{}}{}{\renewcommand*{\enclname}{#1}}%
+  \def\@enclosure{#2}}
+
+% recompute all letter lengths
+\newcommand*{\recomputeletterlengths}{}
+
+% makes the letter title
+% usage: \makelettertitle
+\newcommand*{\makelettertitle}{}
+
+% makes the letter footer
+% usage: \makeletterfooter
+\newcommand*{\makeletterfooter}{\makefooter}
+
+% makes the letter closing
+% usage: \makeletterclosing
+\newcommand*{\makeletterclosing}{}
