@@ -25,3 +25,4 @@ build
 .~lock*
 /.texlipse
 /mai.synctex.gz
+/.externalToolBuilders/
