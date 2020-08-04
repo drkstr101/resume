@@ -8,7 +8,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skillsByName" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skillsByName" upperBound="-1"
         eType="#//SkillsByName"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="accomplishments" upperBound="-1"
         eType="#//Accomplishment" containment="true"/>
