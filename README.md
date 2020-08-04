@@ -1,32 +1,23 @@
 # Resume - Aaron R Miller
 
-This project contains all sources and public resources used in the publication of my personal resume,
-and also serves as a self-contained code sample of my work. If you did not end up here by following
-a link in my published resume, feel free to use this project as a guide for publishing your own
-resume data in a variety of user-defined formats or representations.
+Greetings,
+
+This project contains all of the source data and tools used in the publication of my resume. If you are here looking for a copy of this document, the latest version can be downloaded from [here](public/drkstr101.resume-1.0.0.pdf).
+
 
 
 ## Project Goals
 
-This project intends to provide a mechanism for publishing a complete portfolio that is able to provide
-meaningful and objective insights over the sea of data points accumulated over time.
+The goal of this project is to provide a mechanism for objectively measuring skill development over the course of a professional career, along with publishing tools to output meaningful representations of that data.
 
+This project is currently in the MVP release stage, with the focus on establishing a domain model and skill point calculator which may be used utilized for publication tasks.
 
-## Features
+## Domain Model
 
-### Domain Model
+The intent of the `Resume` domain model is to collect a list of accomplishments along with the skills used during that event. This information is then used to build a histogram of Skill Points over time.
 
-TODO...
+![Resume Model Diagram](public/res/drkstr101.resume.model-1.0.0.jpg)
 
-![Resume Model Diagram](public/img/resumemodel-1.0.0.jpg)
+## Gradle Plugin
 
-### Data Visualizations
-
-TODO...
-
-![Original Skill Cloud Diagram](public/img/skillcoud-1.0.0.png)
-
-### Gradle Plugin
-
-TODO...
-
+The final document is produced through a custom [Gradle Resume Plugin](https://github.com/drkstr101/gradle-resume). Currently, this plugin is responsible for collecting the resume data to build up the domain model, which is then used to generate a word cloud image from the skill points and to publish a LaTex document for the final result. Additional features may be added down the road. Feature requests and contributions welcome!
