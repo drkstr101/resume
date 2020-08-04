@@ -11,7 +11,7 @@ plugins {
 }
 
 group = 'drkstr101.resume'
-version = '1.0.0-SNAPSHOT'
+version = '1.0.0'
 
 ext {
 	distDir = file('public')
