@@ -8,14 +8,18 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skillsByName" lowerBound="1"
+        eType="#//SkillsByName"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="accomplishments" upperBound="-1"
         eType="#//Accomplishment" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employers" upperBound="-1"
         eType="#//Employment" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="references" upperBound="-1"
         eType="#//Reference" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
-        eType="#//Skill" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SkillsByName" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//Skill"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Skill">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -33,14 +37,17 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
-        eType="#//Skill"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accomplishments" eType="#//Accomplishment"
+        eOpposite="#//Accomplishment/employment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Accomplishment">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//AccomplishmentType"
-        defaultValueLiteral="Academic"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="employment" eType="#//Employment"
+        eOpposite="#//Employment/accomplishments"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="references" upperBound="-1"
         eType="#//Reference"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="skills" upperBound="-1"
