@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: ./gradlew build
+
+vscode:
+  extensions:
+    - james-yu.latex-workshop@8.16.1:6fa4781b23391668bffdedabbfdfa6bc
+    - redhat.java@0.79.1:6b7e84ce557ec199240ac0a9bf4572bd
+    - richardwillis.vscode-gradle@3.6.1:cb81b7caa22663e3f8aa463956243364
+    - redhat.vscode-commons@0.0.6:d735cc2dc86088f8b02844276bc66b9c
+    - redhat.fabric8-analytics@0.3.2:e97fabc44440b1ee044a786175c18286
+    - yzhang.markdown-all-in-one@3.4.0:191f58ef00379b6fcbb2e6712da085b6
