@@ -4,9 +4,7 @@
 
 Greetings,
 
-This project contains all of the source data and tools used in the publication of my resume. If you are here looking for a copy of this document, the latest version can be downloaded from [here](public/drkstr101.resume-1.0.0.pdf).
-
-
+This project contains all of the source data and tools used in the publication of my resume. If you are here looking for a copy of this document, the latest version can be downloaded from [here](public/drkstr101.resume-1.0.1.pdf).
 
 ## Project Goals
 

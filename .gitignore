@@ -26,3 +26,12 @@ build
 /.texlipse
 /mai.synctex.gz
 /.externalToolBuilders/
+template/altacv/main.aux
+template/altacv/main.fdb_latexmk
+template/altacv/main.fls
+template/altacv/main.bcf
+template/altacv/main.log
+template/altacv/main.out
+template/altacv/main.pdf
+template/altacv/main.run.xml
+template/altacv/main.synctex.gz
