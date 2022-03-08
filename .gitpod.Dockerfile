@@ -7,5 +7,5 @@ FROM gitpod/workspace-full
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN sudo apt-get -q update && \
-    sudo apt-get install -yq texlive-full pandoc && \
+    sudo apt-get install -yq texlive pandoc && \
     sudo rm -rf /var/lib/apt/lists/*
