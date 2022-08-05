@@ -55,6 +55,7 @@ resume {
 						expressjs
 						typescript
 						loopback_4
+						express
 					}
 				}
 				closure_compiler

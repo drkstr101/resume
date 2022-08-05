@@ -11,7 +11,7 @@ plugins {
 }
 
 group = 'drkstr101.resume'
-version = '1.0.0'
+version = '1.1.0'
 
 ext {
 	distDir = file('public')
@@ -24,7 +24,7 @@ document {
 
 resume {
 	fullName = 'Aaron R Miller'
-	email = 'aaron.miller@waweb.io'
+	email = 'drkstr101@gmail.com'
 }
 
 apply from: file('data/skills.groovy')

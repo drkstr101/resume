@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="resume" nsURI="http://model.waweb.io/drkstr101/resume" nsPrefix="drkstr101.resume">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="resume" nsURI="http://model.watheia.io/drkstr101/resume" nsPrefix="drkstr101.resume">
   <eClassifiers xsi:type="ecore:EClass" name="Resume">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fullName" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

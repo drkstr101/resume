@@ -309,10 +309,10 @@ resume {
 				'aws'
 			]
 		}
-		waweb_org {
+		watheia_org {
 			type = 'Professional'
 			startDate = calendar(2019, 10)
-			endDate = calendar(2020, 06)
+			endDate = calendar(2022, 5)
 			description = '''
 				- Developed and produced a majority of the Lean Business Plan document, including an initial target market, product, sales/marketing, and pricing strategies
 				- Identified talents and negotiated partnerships to fill the roles of CFO and COO, to delegate responsibilities for legal, accounting, business development and growth
@@ -330,10 +330,10 @@ resume {
 				'mentor'
 			]
 		}
-		waweb_sys {
+		watheia_sys {
 			type = 'Professional'
 			startDate = calendar(2019, 10)
-			endDate = calendar(2020, 06)
+			endDate = calendar(2020, 6)
 			description = '''
                 - Created an append-only accounting system and tooling using a combination
 				  of plain text files, HLedger, and Git
@@ -378,19 +378,36 @@ resume {
 		}
 		natural {
 			type = 'Professional'
-			startDate = calendar(2020, 02)
-			endDate = calendar(2020, 07)
+			startDate = calendar(2020, 2)
+			endDate = calendar(2020, 7)
 			description = '''
-				TODO ...
+				 ...
 			'''.stripIndent()
 		}
 		eclipse_xtext {
-			startDate = calendar(2020, 05)
-			endDate = calendar(2020, 07)
+			startDate = calendar(2020, 5)
+			endDate = calendar(2020, 7)
 			type = 'Professional'
 			description = '''
 				TODO ...
 			'''.stripIndent()
+		}
+		sb_editor {
+			startDate = calendar(2022, 1)
+			endDate = calendar(2022, 8)
+			type = 'Professional'
+			description = '''
+				TODO ...
+			'''.stripIndent()
+			skills = [
+				'ux',
+				'web',
+				'react',
+				'redux',
+				'rest',
+				'typescript',
+				'express'
+			]
 		}
 	}
 }
