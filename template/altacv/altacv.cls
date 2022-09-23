@@ -290,16 +290,16 @@
 }
 
 \newcommand{\cvsubsection}[1]{%
-  \smallskip%
-  {\color{subheading}\cvsubsectionfont{#1}\par}\medskip
+  \medskip%
+  {\normalsize\bfseries\underline{#1}\par}\smallskip
 }
 
 % v1.1.4: fixes inconsistent font size
 \newcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
+  {\large\color{accent}#1\par}
   \smallskip\normalsize
   \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\ifstrequal{#3}{}{}{{\hfill\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}\par}
+  \textbf{#2}\ifstrequal{#3}{}{}{{\hfill\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}\par}
   \ifstrequal{#4}{}{}{\smallskip{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
   \medskip\normalsize
 }
