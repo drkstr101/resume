@@ -1,7 +1,7 @@
   /* groovylint-disable DuplicateListLiteral, DuplicateNumberLiteral, DuplicateStringLiteral, CompileStatic */
 resume {
-    accomplishments {
-        ap_credits {
+  accomplishments {
+    ap_credits {
       type = 'Academic'
       startDate = calendar(2000)
       endDate = calendar(2002)
@@ -15,8 +15,8 @@ resume {
                 'compsci'
             ]
       references = ['plano_east']
-        }
-        varsity_debate {
+    }
+    varsity_debate {
       type = 'Academic'
       startDate = calendar(2000)
       endDate = calendar(2002)
