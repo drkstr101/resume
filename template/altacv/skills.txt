@@ -1,85 +1,92 @@
-378: Programming
-288: Systems
-276: Leadership
+384: Programming
+318: Systems
+210: UI/UX
 210: DevOps
-180: UI/UX Design
-138: Nodejs
+198: Leadership
+120: Nodejs
+108: JDK
+96: Web
 96: Linux
-84: Actionscript 3
-84: Product Development
+84: Actionscript
 84: Domain Modeling
-78: Mobile Applications
-78: Java JDK
+78: Mobile
+72: HTML5
+72: Groovy
 72: Flash
-72: Project Management
-72: Communication
 66: API
-60: HTML5/CSS3
+60: Administrator
 60: Microservices
 60: Gradle
 60: REST
+60: Testing
 60: Python
 60: Typescript
-60: Groovy
-60: Apache Flex
+60: Flex
 60: C/C++
-60: Administrator
-60: Business Analysis
-48: Web Applications
-48: Amazon Web Services
+60: Math
+60: Communication
+48: React
+48: AWS
 48: Apache Ant
 48: Serenity BDD
-48: Testing
 48: Sagasjs
 48: Redux
-48: React
-48: Android NDK
+48: NDK
 48: Mentor
-48: Mathematics
+36: Bootstrap
 36: iOS
 36: Kubernetes
 36: Jenkins
 36: Postgresql
-36: Databases
+36: Database
 36: Rust
 36: Loopback 4
+36: Xtext
+36: Java
 36: C#/.NET
-36: Bootstrap
 36: Sales
+36: Project Management
+36: Product Development
 36: CompSci
-24: Progressive Web Apps
-24: HTML5
+36: Business Analysis
+24: PWA
+24: Createjs
 24: GVR/Oculus
 24: Android
 24: Adobe AIR
-24: Data Visualization
+24: DataViz
+24: LSP
 24: Magento
 24: Windows
 24: Vault
 24: Tomcat
 24: Terraform
 24: Stackstorm
-24: Google Cloud Services
-24: MySQL/Maria
-24: MS SQL Server
+24: GCS
+24: MySQL
+24: MS SQL
 24: SOAP
 24: ServiceNow
 24: SCORM
 24: OAuth 2
 24: EMF/ECore
 24: Mocha
+24: JBehave
+24: Cucumber
 24: Php
 24: Expressjs
 24: Express
 24: Spring
-24: Createjs
 24: Closure Compiler
 18: eCommerce
+12: Vue
+12: Vite
+12: Svelte
+12: Next.js
+12: jQuery
+12: Digitalocean
 12: Google Sheets
-12: JBehave
-12: Cucumber
 12: Flow
-12: jQuery Mobile
 12: Xtend
 12: Kotlin
 12: Unreal Engine
